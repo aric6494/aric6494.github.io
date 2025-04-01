@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Loshine&#39;s Blog</title>
-  <icon>http://example.com/icon.png</icon>
+  <icon>https://www.cp23.icu/icon.png</icon>
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://www.cp23.icu/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://www.cp23.icu/"/>
   <updated>2025-03-30T12:52:07.336Z</updated>
-  <id>http://example.com/</id>
+  <id>https://www.cp23.icu/</id>
   
   <author>
     <name>Loshine</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>说日记</title>
-    <link href="http://example.com/2025/03/30/%E8%AF%B4%E6%97%A5%E8%AE%B0/"/>
-    <id>http://example.com/2025/03/30/%E8%AF%B4%E6%97%A5%E8%AE%B0/</id>
+    <link href="https://www.cp23.icu/2025/03/30/%E8%AF%B4%E6%97%A5%E8%AE%B0/"/>
+    <id>https://www.cp23.icu/2025/03/30/%E8%AF%B4%E6%97%A5%E8%AE%B0/</id>
     <published>2025-03-30T02:17:28.000Z</published>
     <updated>2025-03-30T12:52:07.336Z</updated>
     
@@ -34,15 +34,15 @@
     
     
     
-    <category term="随笔" scheme="http://example.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    <category term="随笔" scheme="https://www.cp23.icu/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
   </entry>
   
   <entry>
     <title>数字工具流</title>
-    <link href="http://example.com/2025/03/23/%E6%95%B0%E5%AD%97%E5%B7%A5%E5%85%B7%E6%B5%81/"/>
-    <id>http://example.com/2025/03/23/%E6%95%B0%E5%AD%97%E5%B7%A5%E5%85%B7%E6%B5%81/</id>
+    <link href="https://www.cp23.icu/2025/03/23/%E6%95%B0%E5%AD%97%E5%B7%A5%E5%85%B7%E6%B5%81/"/>
+    <id>https://www.cp23.icu/2025/03/23/%E6%95%B0%E5%AD%97%E5%B7%A5%E5%85%B7%E6%B5%81/</id>
     <published>2025-03-23T15:04:56.000Z</published>
     <updated>2025-03-27T07:02:47.734Z</updated>
     
@@ -63,8 +63,8 @@
   
   <entry>
     <title>Hexo搭建的静态网页添加本地视频</title>
-    <link href="http://example.com/2025/03/06/Hexo%E6%90%AD%E5%BB%BA%E7%9A%84%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E8%A7%86%E9%A2%91/"/>
-    <id>http://example.com/2025/03/06/Hexo%E6%90%AD%E5%BB%BA%E7%9A%84%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E8%A7%86%E9%A2%91/</id>
+    <link href="https://www.cp23.icu/2025/03/06/Hexo%E6%90%AD%E5%BB%BA%E7%9A%84%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E8%A7%86%E9%A2%91/"/>
+    <id>https://www.cp23.icu/2025/03/06/Hexo%E6%90%AD%E5%BB%BA%E7%9A%84%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E8%A7%86%E9%A2%91/</id>
     <published>2025-03-06T15:38:14.000Z</published>
     <updated>2025-03-06T15:53:19.344Z</updated>
     
@@ -80,15 +80,15 @@
     
     
     
-    <category term="问题" scheme="http://example.com/categories/%E9%97%AE%E9%A2%98/"/>
+    <category term="问题" scheme="https://www.cp23.icu/categories/%E9%97%AE%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
     <title>三角函数</title>
-    <link href="http://example.com/2025/03/03/manim-2/"/>
-    <id>http://example.com/2025/03/03/manim-2/</id>
+    <link href="https://www.cp23.icu/2025/03/03/manim-2/"/>
+    <id>https://www.cp23.icu/2025/03/03/manim-2/</id>
     <published>2025-03-03T14:44:30.000Z</published>
     <updated>2025-03-22T09:57:41.673Z</updated>
     
@@ -105,16 +105,16 @@
     
     
     
-    <category term="manim" scheme="http://example.com/tags/manim/"/>
+    <category term="manim" scheme="https://www.cp23.icu/tags/manim/"/>
     
-    <category term="数学" scheme="http://example.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    <category term="数学" scheme="https://www.cp23.icu/tags/%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
     <title>git端口22超时连接</title>
-    <link href="http://example.com/2025/02/02/git%E7%AB%AF%E5%8F%A322%E8%B6%85%E6%97%B6%E8%BF%9E%E6%8E%A5/"/>
-    <id>http://example.com/2025/02/02/git%E7%AB%AF%E5%8F%A322%E8%B6%85%E6%97%B6%E8%BF%9E%E6%8E%A5/</id>
+    <link href="https://www.cp23.icu/2025/02/02/git%E7%AB%AF%E5%8F%A322%E8%B6%85%E6%97%B6%E8%BF%9E%E6%8E%A5/"/>
+    <id>https://www.cp23.icu/2025/02/02/git%E7%AB%AF%E5%8F%A322%E8%B6%85%E6%97%B6%E8%BF%9E%E6%8E%A5/</id>
     <published>2025-02-02T10:32:54.000Z</published>
     <updated>2025-02-28T05:14:16.267Z</updated>
     
@@ -130,15 +130,15 @@
     
     
     
-    <category term="问题" scheme="http://example.com/categories/%E9%97%AE%E9%A2%98/"/>
+    <category term="问题" scheme="https://www.cp23.icu/categories/%E9%97%AE%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
     <title>Termux 教程</title>
-    <link href="http://example.com/2025/01/29/Termux-%E6%95%99%E7%A8%8B/"/>
-    <id>http://example.com/2025/01/29/Termux-%E6%95%99%E7%A8%8B/</id>
+    <link href="https://www.cp23.icu/2025/01/29/Termux-%E6%95%99%E7%A8%8B/"/>
+    <id>https://www.cp23.icu/2025/01/29/Termux-%E6%95%99%E7%A8%8B/</id>
     <published>2025-01-29T00:20:07.000Z</published>
     <updated>2025-03-06T15:32:11.752Z</updated>
     
@@ -154,7 +154,7 @@
     
     
     
-    <category term="Termux" scheme="http://example.com/tags/Termux/"/>
+    <category term="Termux" scheme="https://www.cp23.icu/tags/Termux/"/>
     
   </entry>
   
