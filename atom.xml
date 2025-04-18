@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Loshine&#39;s Blog</title>
+  <title>赴言</title>
   <icon>https://www.cp23.icu/icon.png</icon>
   
   <link href="https://www.cp23.icu/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>https://www.cp23.icu/</id>
   
   <author>
-    <name>Loshine</name>
+    <name>赴言</name>
     
   </author>
   
