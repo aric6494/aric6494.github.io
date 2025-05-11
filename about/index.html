@@ -8,9 +8,9 @@
 <title>赴言</title>
 <meta name="keywords" content="">
 <meta name="description" content="你好。">
-<meta name="author" content="Theme PaperMod">
+<meta name="author" content="">
 <link rel="canonical" href="https://www.shuohan.work/about/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.6da9a63d25a9608bca2f7f907a030e887a7dd3c3f3918e4cc113129361414bda.css" integrity="sha256-bammPSWpYIvKL3&#43;QegMOiHp908PzkY5MwRMSk2FBS9o=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.shuohan.work/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.shuohan.work/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.shuohan.work/favicon-32x32.png">
@@ -61,9 +61,7 @@
   <meta property="og:description" content="你好。">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
-      <meta property="og:image" content="https://www.shuohan.work/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://www.shuohan.work/images/papermod-cover.png">
+<meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="">
 <meta name="twitter:description" content="你好。">
 
@@ -95,12 +93,8 @@
   "articleBody": "你好。\n",
   "wordCount" : "1",
   "inLanguage": "en",
-  "image": "https://www.shuohan.work/images/papermod-cover.png","datePublished": "0001-01-01T00:00:00Z",
+  "datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
-  "author":{
-    "@type": "Person",
-    "name": "Theme PaperMod"
-  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.shuohan.work/about/"
@@ -157,7 +151,7 @@
                 <ul class="lang-switch"><li>|</li>
                     <li>
                         <a href="https://www.shuohan.work/zh/" title="Chinese"
-                            aria-label="Chinese">Chinese</a>
+                            aria-label="Chinese">Zh</a>
                     </li>
                 </ul>
             </div>
@@ -185,15 +179,14 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://www.shuohan.work/">Home</a></div>
+    
     <h1 class="post-title entry-hint-parent">
       
     </h1>
-    <div class="post-meta">1 min&nbsp;·&nbsp;Theme PaperMod
+    <div class="post-meta">
 
 </div>
   </header> 
-
   <div class="post-content"><p>你好。</p>
 
 
@@ -202,7 +195,6 @@
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
-
   </footer>
 </article>
     </main>
@@ -275,53 +267,6 @@
         }
     })
 
-</script>
-<script>
-    document.querySelectorAll('pre > code').forEach((codeblock) => {
-        const container = codeblock.parentNode.parentNode;
-
-        const copybutton = document.createElement('button');
-        copybutton.classList.add('copy-code');
-        copybutton.innerHTML = 'copy';
-
-        function copyingDone() {
-            copybutton.innerHTML = 'copied!';
-            setTimeout(() => {
-                copybutton.innerHTML = 'copy';
-            }, 2000);
-        }
-
-        copybutton.addEventListener('click', (cb) => {
-            if ('clipboard' in navigator) {
-                navigator.clipboard.writeText(codeblock.textContent);
-                copyingDone();
-                return;
-            }
-
-            const range = document.createRange();
-            range.selectNodeContents(codeblock);
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-            try {
-                document.execCommand('copy');
-                copyingDone();
-            } catch (e) { };
-            selection.removeRange(range);
-        });
-
-        if (container.classList.contains("highlight")) {
-            container.appendChild(copybutton);
-        } else if (container.parentNode.firstChild == container) {
-            
-        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-            
-            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
-        } else {
-            
-            codeblock.parentNode.appendChild(copybutton);
-        }
-    });
 </script>
 </body>
 
