@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>阅读 on 赴言</title>
+    <link>https://www.shuohan.work/zh/tags/%E9%98%85%E8%AF%BB/</link>
+    <description>Recent content in 阅读 on 赴言</description>
+    <image>
+      <title>赴言</title>
+      <url>https://www.shuohan.work/images/papermod-cover.png</url>
+      <link>https://www.shuohan.work/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.2</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 10 May 2025 10:22:12 +0000</lastBuildDate>
+    <atom:link href="https://www.shuohan.work/zh/tags/%E9%98%85%E8%AF%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>读《学会提问 批判性思维指南》</title>
+      <link>https://www.shuohan.work/zh/posts/%E8%AF%BB%E5%AD%A6%E4%BC%9A%E6%8F%90%E9%97%AE-%E6%89%B9%E5%88%A4%E6%80%A7%E6%80%9D%E7%BB%B4%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Sat, 10 May 2025 10:22:12 +0000</pubDate>
+      <guid>https://www.shuohan.work/zh/posts/%E8%AF%BB%E5%AD%A6%E4%BC%9A%E6%8F%90%E9%97%AE-%E6%89%B9%E5%88%A4%E6%80%A7%E6%80%9D%E7%BB%B4%E6%8C%87%E5%8D%97/</guid>
+      <description>&lt;p&gt;上个月读完了《学会提问&amp;mdash;批判性思维指南》，收获很大。这本书告诉我在面对许多信息时，我是否选择相信它。&lt;/p&gt;
+&lt;p&gt;对某个信息（可以是一句话，新闻或他人的评论等），要先找到它的话题是什么，对这个话题所下的结论是什么，以及是如何证明得到这个结论。本书大部分内容都集中在&lt;strong&gt;证明这个结论的过程&lt;/strong&gt;上。而证明结论的东西就是证据，书中从多个方面介绍了如何发现这些证据的谬误。这里举一个书中的谬误：&lt;a href=&#34;https://zh.wikipedia.org/zh-cn/%E6%BB%91%E5%9D%A1%E8%AC%AC%E8%AA%A4?&#34;&gt;滑坡推理&lt;/a&gt;。&lt;strong&gt;它指的是在论证过程中，将某一初始事件或行为视为不可避免地导致一系列逐渐恶化的后果，最终引出一个极端或灾难性的结论，从而试图阻止或否定最初的行为&lt;/strong&gt;。以下是例子“如果我们允许学生在课堂上使用手机，那么他们就会开始玩游戏，接着会忽视老师的讲解，最终导致学习成绩下降，甚至辍学。因此，我们绝不能允许学生在课堂上使用手机。”这个例子就使用了滑坡推理谬误，认为学生使用手机后就会玩游戏，再导致学习成绩下滑以至于辍学。事实上，使用手机不一定会玩游戏，而玩游戏也不一定会导致学习成绩下滑，这需要看学生自己的自制力。书中还提到其它的类型的推理谬误&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;，以及如何判断证据的可信度。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
