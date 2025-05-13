@@ -2,6 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.shuohan.work/en/</loc>
+    <lastmod>2025-05-13T19:56:48+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://www.shuohan.work/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://www.shuohan.work/en/"
+                />
+  </url><url>
+    <loc>https://www.shuohan.work/en/posts/</loc>
+    <lastmod>2025-05-13T19:56:48+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://www.shuohan.work/zh/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://www.shuohan.work/en/posts/"
+                />
+  </url><url>
+    <loc>https://www.shuohan.work/en/posts/tom-the-kitten-goes-fishing/</loc>
+    <lastmod>2025-05-13T19:56:48+08:00</lastmod>
+  </url><url>
     <loc>https://www.shuohan.work/en/archives/</loc>
     <xhtml:link
                 rel="alternate"
@@ -24,18 +53,6 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="https://www.shuohan.work/en/categories/"
-                />
-  </url><url>
-    <loc>https://www.shuohan.work/en/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://www.shuohan.work/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://www.shuohan.work/en/"
                 />
   </url><url>
     <loc>https://www.shuohan.work/en/tags/</loc>
