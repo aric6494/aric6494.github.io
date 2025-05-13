@@ -20,5 +20,15 @@
       <guid>https://www.shuohan.work/zh/tags/%E9%98%85%E8%AF%BB/</guid>
       <description></description>
     </item>
+<<<<<<< HEAD
+=======
+    <item>
+      <title>思考</title>
+      <link>https://www.shuohan.work/zh/tags/%E6%80%9D%E8%80%83/</link>
+      <pubDate>Sun, 30 Mar 2025 10:17:28 +0800</pubDate>
+      <guid>https://www.shuohan.work/zh/tags/%E6%80%9D%E8%80%83/</guid>
+      <description></description>
+    </item>
+>>>>>>> c23189d (new commits)
   </channel>
 </rss>
