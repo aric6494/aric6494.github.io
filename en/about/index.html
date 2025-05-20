@@ -192,7 +192,7 @@ This site uses the Hugo PaperMod theme. Previously I used the Hexo Butterfly the
     <h1 class="post-title entry-hint-parent">
       
     </h1>
-    <div class="post-meta">1 min&nbsp;|&nbsp;Translations:
+    <div class="post-meta">1 min&nbsp;·&nbsp;229 words&nbsp;|&nbsp;Translations:
 <ul class="i18n_list">
     <li>
         <a href="https://www.shuohan.work/zh/about/">简体中文</a>
@@ -225,7 +225,21 @@ This site uses the Hugo PaperMod theme. Previously I used the Hexo Butterfly the
     <ul class="post-tags">
     </ul>
 
-  </footer>
+  </footer><script src="https://giscus.app/client.js"
+        data-repo="aric6494/aric6494.github.io"
+        data-repo-id="R_kgDOOn84tg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOOn84ts4CqDfQ"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="transparent_dark"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
 </article>
     </main>
     
@@ -242,7 +256,22 @@ This site uses the Hugo PaperMod theme. Previously I used the Hexo Butterfly the
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
         <path d="M12 6H0l6-6z" />
     </svg>
-</a>
+</a><p id="uptime"></p>
+     <script>
+     const startDate = new Date('2025-01-29T08:20:07'); 
+     function updateUptime() {
+         const now = new Date();
+         const diff = now - startDate;
+         const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+         const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+         const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+         const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+         document.getElementById('uptime').innerHTML = `网站已运行：${days}天${hours}小时${minutes}分钟${seconds}秒`;
+     }
+     setInterval(updateUptime, 1000); 
+     updateUptime(); 
+     </script>
+
 
 <script>
     let menu = document.getElementById('menu')

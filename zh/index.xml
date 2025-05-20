@@ -11,15 +11,23 @@
     </image>
     <generator>Hugo -- 0.147.2</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 10 May 2025 10:22:12 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 May 2025 09:19:42 +0800</lastBuildDate>
     <atom:link href="https://www.shuohan.work/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>改变</title>
+      <link>https://www.shuohan.work/zh/posts/%E6%94%B9%E5%8F%98/</link>
+      <pubDate>Tue, 20 May 2025 09:19:42 +0800</pubDate>
+      <guid>https://www.shuohan.work/zh/posts/%E6%94%B9%E5%8F%98/</guid>
+      <description>&lt;p&gt;一直想写些什么，却总抓不住灵感，不如讲述下我在这个学期所发生的改变。&lt;/p&gt;
+&lt;p&gt;记得开学前几周，我知晓了rss，想要订阅些有意思的个人博客。一次，我上网时偶然浏览到一个叫 &lt;em&gt;编程随想&lt;/em&gt; 的博客，好奇之下点了进去。其文章内容不仅深深吸引着我，也为我的思想改变埋下了一颗种子。那段时间，我经常阅读 编程随想 的文章，从中了解了许多在心理和认知等相关的内容。如他的分类标签下的学习方法，学会思考和心理学的文章，介绍了短视频的害处，独立思考的重要性和自我管理等，这些内容让我受益良多。这让我感受到了独立网站的魅力，因此我偶尔会花些时间寻找一些我满意的博客。这些博客让我萌发了搭建这个网站的想法。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>读《学会提问 批判性思维指南》</title>
       <link>https://www.shuohan.work/zh/posts/%E8%AF%BB%E5%AD%A6%E4%BC%9A%E6%8F%90%E9%97%AE-%E6%89%B9%E5%88%A4%E6%80%A7%E6%80%9D%E7%BB%B4%E6%8C%87%E5%8D%97/</link>
       <pubDate>Sat, 10 May 2025 10:22:12 +0000</pubDate>
       <guid>https://www.shuohan.work/zh/posts/%E8%AF%BB%E5%AD%A6%E4%BC%9A%E6%8F%90%E9%97%AE-%E6%89%B9%E5%88%A4%E6%80%A7%E6%80%9D%E7%BB%B4%E6%8C%87%E5%8D%97/</guid>
       <description>&lt;p&gt;上个月读完了《学会提问&amp;mdash;批判性思维指南》，收获很大。这本书告诉我在面对许多信息时，我是否选择相信它。&lt;/p&gt;
-&lt;p&gt;对某个信息（可以是一句话，新闻或他人的评论等），要先找到它的话题是什么，对这个话题所下的结论是什么，以及是如何证明得到这个结论。本书大部分内容都集中在&lt;strong&gt;证明这个结论的过程&lt;/strong&gt;上。而证明结论的东西就是证据，书中从多个方面介绍了如何发现这些证据的谬误。这里举一个书中的谬误：&lt;a href=&#34;https://zh.wikipedia.org/zh-cn/%E6%BB%91%E5%9D%A1%E8%AC%AC%E8%AA%A4?&#34;&gt;滑坡推理&lt;/a&gt;。&lt;strong&gt;它指的是在论证过程中，将某一初始事件或行为视为不可避免地导致一系列逐渐恶化的后果，最终引出一个极端或灾难性的结论，从而试图阻止或否定最初的行为&lt;/strong&gt;。以下是例子“如果我们允许学生在课堂上使用手机，那么他们就会开始玩游戏，接着会忽视老师的讲解，最终导致学习成绩下降，甚至辍学。因此，我们绝不能允许学生在课堂上使用手机。”这个例子就使用了滑坡推理谬误，认为学生使用手机后就会玩游戏，再导致学习成绩下滑以至于辍学。事实上，使用手机不一定会玩游戏，而玩游戏也不一定会导致学习成绩下滑，这需要看学生自己的自制力。书中还提到其它的类型的推理谬误&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;，以及如何判断证据的可信度。&lt;/p&gt;</description>
+&lt;p&gt;对某个信息（可以是一句话，新闻或他人的评论等），要先找到它的话题是什么，对这个话题所下的结论是什么，以及是如何证明得到这个结论。本书大部分内容都集中在&lt;strong&gt;证明这个结论的过程&lt;/strong&gt;上。而证明结论的东西就是证据，书中从多个方面介绍了如何发现这些证据的谬误。这里举一个书中的谬误：&lt;a href=&#34;https://zh.wikipedia.org/zh-cn/%E6%BB%91%E5%9D%A1%E8%AC%AC%E8%AA%A4?&#34;&gt;滑坡推理&lt;/a&gt;。&lt;strong&gt;它指的是在论证过程中，将某一初始事件或行为视为不可避免地导致一系列逐渐恶化的后果，最终引出一个极端或灾难性的结论，从而试图阻止或否定最初的行为&lt;/strong&gt;。以下是例子“如果我们允许学生在课堂上使用手机，那么他们就会开始玩游戏，接着会忽视老师的讲解，最终导致学习成绩下降，甚至辍学。因此，我们绝不能允许学生在课堂上使用手机。”这个例子就使用了滑坡推理谬误，认为学生使用手机后就会玩游戏，再导致学习成绩下滑以至于辍学。事实上，使用手机不一定会玩游戏，而玩游戏也不一定会导致学习成绩下滑，这需要看学生自己的自制力等因素。书中还提到其它的类型的推理谬误&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;，以及如何判断证据的可信度。&lt;/p&gt;</description>
     </item>
     <item>
       <title>日记</title>
@@ -33,12 +41,12 @@
       <link>https://www.shuohan.work/zh/posts/%E6%95%B0%E5%AD%97%E5%B7%A5%E5%85%B7%E6%B5%81/</link>
       <pubDate>Wed, 26 Mar 2025 12:05:36 +0800</pubDate>
       <guid>https://www.shuohan.work/zh/posts/%E6%95%B0%E5%AD%97%E5%B7%A5%E5%85%B7%E6%B5%81/</guid>
-      <description>&lt;h3 id=&#34;vpn&#34;&gt;VPN&lt;/h3&gt;
-&lt;p&gt;首先是介绍如何使用VPN，因为以下软件基本都是要翻墙才能下载。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/&#34;&gt;Github&lt;/a&gt;是一个开源网站，在网站中搜索 “翻墙” 这个关键词，就会出现相关内容。有时不一定能进入网站，需要看运气。&lt;/p&gt;
-&lt;h3 id=&#34;obsidian笔记软件&#34;&gt;obsidian笔记软件&lt;/h3&gt;
+      <description>&lt;h3 id=&#34;笔记软件&#34;&gt;笔记软件&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://obsidian.md/&#34;&gt;obsidian&lt;/a&gt;是一个多平台的笔记软件。支持&lt;strong&gt;markdown语法&lt;/strong&gt;和&lt;strong&gt;双链&lt;/strong&gt;，同时也支持安装插件。&lt;/p&gt;
-&lt;p&gt;软件本身同步需要付费，因此可以安装&lt;strong&gt;Remotely save插件&lt;/strong&gt;实现在各个平台同步。&lt;/p&gt;</description>
+&lt;p&gt;软件本身同步需要付费，因此可以安装&lt;strong&gt;Remotely save插件&lt;/strong&gt;实现在各个平台同步。&lt;/p&gt;
+&lt;h3 id=&#34;云同步服务&#34;&gt;云同步服务&lt;/h3&gt;
+&lt;h4 id=&#34;坚果云&#34;&gt;坚果云&lt;/h4&gt;
+&lt;p&gt;国内云同步软件，无限容量，但是每月只能上传1G流量，下载3G流量。用来同步笔记完全是足够的。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

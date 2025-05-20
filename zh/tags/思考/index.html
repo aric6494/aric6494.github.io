@@ -172,7 +172,22 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
         <path d="M12 6H0l6-6z" />
     </svg>
-</a>
+</a><p id="uptime"></p>
+     <script>
+     const startDate = new Date('2025-01-29T08:20:07'); 
+     function updateUptime() {
+         const now = new Date();
+         const diff = now - startDate;
+         const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+         const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+         const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+         const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+         document.getElementById('uptime').innerHTML = `网站已运行：${days}天${hours}小时${minutes}分钟${seconds}秒`;
+     }
+     setInterval(updateUptime, 1000); 
+     updateUptime(); 
+     </script>
+
 
 <script>
     let menu = document.getElementById('menu')
