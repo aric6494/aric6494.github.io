@@ -2,69 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/en/</loc>
+    <loc>https://www.shuohan.work/en/</loc>
     <lastmod>2025-05-13T19:56:48+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh/"
+                href="https://www.shuohan.work/zh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/"
+                href="https://www.shuohan.work/en/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/posts/</loc>
+    <loc>https://www.shuohan.work/en/posts/</loc>
     <lastmod>2025-05-13T19:56:48+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh/posts/"
+                href="https://www.shuohan.work/zh/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/posts/"
+                href="https://www.shuohan.work/en/posts/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/posts/tom-the-kitten-goes-fishing/</loc>
+    <loc>https://www.shuohan.work/en/posts/tom-the-kitten-goes-fishing/</loc>
     <lastmod>2025-05-13T19:56:48+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/archives/</loc>
+    <loc>https://www.shuohan.work/en/archives/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh/archives/"
+                href="https://www.shuohan.work/zh/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/archives/"
+                href="https://www.shuohan.work/en/archives/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/categories/</loc>
+    <loc>https://www.shuohan.work/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh/categories/"
+                href="https://www.shuohan.work/zh/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/categories/"
+                href="https://www.shuohan.work/en/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/</loc>
+    <loc>https://www.shuohan.work/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh/tags/"
+                href="https://www.shuohan.work/zh/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/"
+                href="https://www.shuohan.work/en/tags/"
                 />
   </url>
 </urlset>
