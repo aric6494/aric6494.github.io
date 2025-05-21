@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>成长 on 赴言</title>
-    <link>https://www.shuohan.work/zh/tags/%E6%88%90%E9%95%BF/</link>
+    <link>http://localhost:1313/zh/tags/%E6%88%90%E9%95%BF/</link>
     <description>Recent content in 成长 on 赴言</description>
     <image>
       <title>赴言</title>
-      <url>https://www.shuohan.work/images/papermod-cover.png</url>
-      <link>https://www.shuohan.work/images/papermod-cover.png</link>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.147.2</generator>
     <language>zh-CN</language>
     <lastBuildDate>Tue, 20 May 2025 09:19:42 +0800</lastBuildDate>
-    <atom:link href="https://www.shuohan.work/zh/tags/%E6%88%90%E9%95%BF/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/zh/tags/%E6%88%90%E9%95%BF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>改变</title>
-      <link>https://www.shuohan.work/zh/posts/%E6%94%B9%E5%8F%98/</link>
+      <link>http://localhost:1313/zh/posts/%E6%94%B9%E5%8F%98/</link>
       <pubDate>Tue, 20 May 2025 09:19:42 +0800</pubDate>
-      <guid>https://www.shuohan.work/zh/posts/%E6%94%B9%E5%8F%98/</guid>
+      <guid>http://localhost:1313/zh/posts/%E6%94%B9%E5%8F%98/</guid>
       <description>&lt;p&gt;一直想写些什么，却总抓不住灵感，不如讲述下我在这个学期所发生的改变。&lt;/p&gt;
 &lt;p&gt;记得开学前几周，我知晓了rss，想要订阅些有意思的个人博客。一次，我上网时偶然浏览到一个叫 &lt;em&gt;编程随想&lt;/em&gt; 的博客，好奇之下点了进去。其文章内容不仅深深吸引着我，也为我的思想改变埋下了一颗种子。那段时间，我经常阅读 编程随想 的文章，从中了解了许多在心理和认知等相关的内容。如他的分类标签下的学习方法，学会思考和心理学的文章，介绍了短视频的害处，独立思考的重要性和自我管理等，这些内容让我受益良多。这让我感受到了独立网站的魅力，因此我偶尔会花些时间寻找一些我满意的博客。这些博客让我萌发了搭建这个网站的想法。&lt;/p&gt;</description>
     </item>
