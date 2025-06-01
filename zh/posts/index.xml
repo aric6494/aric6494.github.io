@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo -- 0.147.2</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 20 May 2025 09:19:42 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 25 May 2025 09:02:54 +0800</lastBuildDate>
     <atom:link href="https://www.shuohan.work/zh/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>大学心路</title>
+      <link>https://www.shuohan.work/zh/posts/%E5%A4%A7%E5%AD%A6%E5%BF%83%E8%B7%AF/</link>
+      <pubDate>Sun, 25 May 2025 09:02:54 +0800</pubDate>
+      <guid>https://www.shuohan.work/zh/posts/%E5%A4%A7%E5%AD%A6%E5%BF%83%E8%B7%AF/</guid>
+      <description>&lt;p&gt;大学生活的心路历程。&lt;/p&gt;
+&lt;h3 id=&#34;大一上&#34;&gt;大一上&lt;/h3&gt;
+&lt;p&gt;刚入大学时，我对计算机非常感兴趣，便萌生了转计科的想法，但期末考试因线上忘记时间而有一科不及格。学校规定转专业时不能挂科，且本人性格内向，我下意识的认为：若我向老师提出请求，将受老师斥责，以至我内心感到羞愧。尽管我暗自确信辅导员会同意请求，但我未敢开口，只得以学习英语改变性格为由使我藏起转专业的想法。最终到转专业的截止日期，我心里像被石头压住，自责自己未能鼓起勇气。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>改变</title>
       <link>https://www.shuohan.work/zh/posts/%E6%94%B9%E5%8F%98/</link>
@@ -35,18 +44,6 @@
       <pubDate>Sun, 30 Mar 2025 10:17:28 +0800</pubDate>
       <guid>https://www.shuohan.work/zh/posts/%E6%97%A5%E8%AE%B0/</guid>
       <description>&lt;p&gt;日记，我曾在高中时写过一段时间的日记。在学习的压力下，我感到些许烦躁，希望向他人倾诉，又害怕他告密。思来想去，为何不写日记呢。不仅能缓解心情，也不用担心他人是否守密。每天晚上下课，我翻开空白本子，写上今天让我烦心的事情。待我心情好转后，也就没在写日记了。最近在阅读一些文章时，对这些文章作者的文笔感到十分羡慕，这激发了我提高自己写作能力的想法。我想到写日记可以提高作文水平，便为自己定下了坚持写日记的目标。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>数字工具流</title>
-      <link>https://www.shuohan.work/zh/posts/%E6%95%B0%E5%AD%97%E5%B7%A5%E5%85%B7%E6%B5%81/</link>
-      <pubDate>Wed, 26 Mar 2025 12:05:36 +0800</pubDate>
-      <guid>https://www.shuohan.work/zh/posts/%E6%95%B0%E5%AD%97%E5%B7%A5%E5%85%B7%E6%B5%81/</guid>
-      <description>&lt;h3 id=&#34;笔记软件&#34;&gt;笔记软件&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://obsidian.md/&#34;&gt;obsidian&lt;/a&gt;是一个多平台的笔记软件。支持&lt;strong&gt;markdown语法&lt;/strong&gt;和&lt;strong&gt;双链&lt;/strong&gt;，同时也支持安装插件。&lt;/p&gt;
-&lt;p&gt;软件本身同步需要付费，因此可以安装&lt;strong&gt;Remotely save插件&lt;/strong&gt;实现在各个平台同步。&lt;/p&gt;
-&lt;h3 id=&#34;云同步服务&#34;&gt;云同步服务&lt;/h3&gt;
-&lt;h4 id=&#34;坚果云&#34;&gt;坚果云&lt;/h4&gt;
-&lt;p&gt;国内云同步软件，无限容量，但是每月只能上传1G流量，下载3G流量。用来同步笔记完全是足够的。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

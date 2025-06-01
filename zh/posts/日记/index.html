@@ -55,7 +55,13 @@
         }
 
     </style>
-</noscript><meta property="og:url" content="https://www.shuohan.work/zh/posts/%E6%97%A5%E8%AE%B0/">
+</noscript>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+   
+   <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+   
+   <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+<meta property="og:url" content="https://www.shuohan.work/zh/posts/%E6%97%A5%E8%AE%B0/">
   <meta property="og:site_name" content="赴言">
   <meta property="og:title" content="日记">
   <meta property="og:description" content="日记，我曾在高中时写过一段时间的日记。在学习的压力下，我感到些许烦躁，希望向他人倾诉，又害怕他告密。思来想去，为何不写日记呢。不仅能缓解心情，也不用担心他人是否守密。每天晚上下课，我翻开空白本子，写上今天让我烦心的事情。待我心情好转后，也就没在写日记了。最近在阅读一些文章时，对这些文章作者的文笔感到十分羡慕，这激发了我提高自己写作能力的想法。我想到写日记可以提高作文水平，便为自己定下了坚持写日记的目标。">
@@ -184,6 +190,17 @@
                     <span>关于</span>
                 </a>
             </li>
+            <li>
+                <a href="https://www.shuohan.work/Notes/" title="笔记">
+                    <span>笔记</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -218,29 +235,22 @@
     <br>
     <span>读《学会提问 批判性思维指南》</span>
   </a>
-  <a class="next" href="https://www.shuohan.work/zh/posts/%E6%95%B0%E5%AD%97%E5%B7%A5%E5%85%B7%E6%B5%81/">
-    <span class="title">下一页 »</span>
-    <br>
-    <span>数字工具流</span>
-  </a>
 </nav>
 
-  </footer><script src="https://giscus.app/client.js"
-        data-repo="aric6494/aric6494.github.io"
-        data-repo-id="R_kgDOOn84tg"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOOn84ts4CqDfQ"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="transparent_dark"
-        data-lang="zh-CN"
-        crossorigin="anonymous"
-        async>
-</script>
+  </footer>
 </article>
+
+
+<p>
+  <a href="mailto:hgdihs670@gmail.com?subject=%E6%97%A5%E8%AE%B0&body=https%3A%2F%2Fwww.shuohan.work%2Fzh%2Fposts%2F%25E6%2597%25A5%25E8%25AE%25B0%2F" title="发送邮件">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+       stroke-linecap="round" stroke-linejoin="round">
+      <title>Gmail</title>
+      <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+    </svg>
+  </a>
+</p>
     </main>
     
 <footer class="footer">
@@ -256,7 +266,22 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
         <path d="M12 6H0l6-6z" />
     </svg>
-</a><p id="uptime"></p>
+</a>
+
+  
+
+  
+
+  
+
+  
+
+<div class="footer-post-count">
+  共 4 篇文章，4608 字
+</div>
+
+
+<p id="uptime"></p>
      <script>
      const startDate = new Date('2025-01-29T08:20:07'); 
      function updateUptime() {
@@ -271,6 +296,30 @@
      setInterval(updateUptime, 1000); 
      updateUptime(); 
      </script>
+
+
+<div id="aplayer"></div>
+<script>
+  const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    fixed: true,
+    midi: true,
+    autoplay: false,
+    theme: '#FADFA3',
+    loop: 'all',
+    order: 'list',
+    preload: 'auto',
+    volume: 0.7,
+    listFolded: false,
+    audio: [
+      {
+        name: 'Wish U',
+        url: 'https://github.com/aric6494/music/raw/main/16%20-%20Wish%20U.mp3'
+      }
+      
+    ]
+  });
+</script>
 
 
 <script>

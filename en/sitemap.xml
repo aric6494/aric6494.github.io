@@ -28,6 +28,22 @@
                 href="https://www.shuohan.work/en/posts/"
                 />
   </url><url>
+    <loc>https://www.shuohan.work/en/tags/story/</loc>
+    <lastmod>2025-05-13T19:56:48+08:00</lastmod>
+  </url><url>
+    <loc>https://www.shuohan.work/en/tags/</loc>
+    <lastmod>2025-05-13T19:56:48+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://www.shuohan.work/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://www.shuohan.work/en/tags/"
+                />
+  </url><url>
     <loc>https://www.shuohan.work/en/posts/tom-the-kitten-goes-fishing/</loc>
     <lastmod>2025-05-13T19:56:48+08:00</lastmod>
   </url><url>
@@ -53,18 +69,6 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="https://www.shuohan.work/en/categories/"
-                />
-  </url><url>
-    <loc>https://www.shuohan.work/en/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://www.shuohan.work/zh/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://www.shuohan.work/en/tags/"
                 />
   </url>
 </urlset>

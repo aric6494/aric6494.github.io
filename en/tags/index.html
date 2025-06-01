@@ -57,7 +57,13 @@
         }
 
     </style>
-</noscript><meta property="og:url" content="https://www.shuohan.work/en/tags/">
+</noscript>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+   
+   <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+   
+   <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+<meta property="og:url" content="https://www.shuohan.work/en/tags/">
   <meta property="og:site_name" content="Fuyan">
   <meta property="og:title" content="Tags">
   <meta property="og:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod">
@@ -132,6 +138,17 @@
                     <span>About</span>
                 </a>
             </li>
+            <li>
+                <a href="https://www.shuohan.work/Notes/" title="Notes">
+                    <span>Notes</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -141,6 +158,9 @@
 </header>
 
 <ul class="terms-tags">
+    <li>
+        <a href="https://www.shuohan.work/en/tags/story/">story <sup><strong><sup>1</sup></strong></sup> </a>
+    </li>
 </ul>
     </main>
     
@@ -157,7 +177,16 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
         <path d="M12 6H0l6-6z" />
     </svg>
-</a><p id="uptime"></p>
+</a>
+
+  
+
+<div class="footer-post-count">
+  共 1 篇文章，232 字
+</div>
+
+
+<p id="uptime"></p>
      <script>
      const startDate = new Date('2025-01-29T08:20:07'); 
      function updateUptime() {
@@ -172,6 +201,30 @@
      setInterval(updateUptime, 1000); 
      updateUptime(); 
      </script>
+
+
+<div id="aplayer"></div>
+<script>
+  const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    fixed: true,
+    midi: true,
+    autoplay: false,
+    theme: '#FADFA3',
+    loop: 'all',
+    order: 'list',
+    preload: 'auto',
+    volume: 0.7,
+    listFolded: false,
+    audio: [
+      {
+        name: 'Wish U',
+        url: 'https://github.com/aric6494/music/raw/main/16%20-%20Wish%20U.mp3'
+      }
+      
+    ]
+  });
+</script>
 
 
 <script>
