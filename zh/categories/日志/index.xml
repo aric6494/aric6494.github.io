@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>成长 on 赴言</title>
-    <link>https://www.shuohan.work/zh/tags/%E6%88%90%E9%95%BF/</link>
-    <description>Recent content in 成长 on 赴言</description>
+    <title>日志 on 赴言</title>
+    <link>https://www.shuohan.work/zh/categories/%E6%97%A5%E5%BF%97/</link>
+    <description>Recent content in 日志 on 赴言</description>
     <image>
       <title>赴言</title>
       <url>https://www.shuohan.work/images/papermod-cover.png</url>
@@ -12,7 +12,7 @@
     <generator>Hugo -- 0.147.2</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sun, 25 May 2025 09:02:54 +0800</lastBuildDate>
-    <atom:link href="https://www.shuohan.work/zh/tags/%E6%88%90%E9%95%BF/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.shuohan.work/zh/categories/%E6%97%A5%E5%BF%97/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>大学心路</title>
       <link>https://www.shuohan.work/zh/posts/%E5%A4%A7%E5%AD%A6%E5%BF%83%E8%B7%AF/</link>
@@ -28,6 +28,21 @@
       <pubDate>Tue, 20 May 2025 09:19:42 +0800</pubDate>
       <guid>https://www.shuohan.work/zh/posts/%E6%94%B9%E5%8F%98/</guid>
       <description>&lt;p&gt;记得开学前几周，我知晓了rss，想要订阅些有意思的个人博客。一次，我上网时偶然浏览到一个文章，好奇之下点了进去。其文章内容不仅深深吸引着我，也为我的思想改变埋下了一颗种子。我第一次发现博客文章也充满了许多的智慧。那段时间，我经常阅读 有深度 的文章，从中了解许多在心理和认知等相关的内容。如博客文章的学习方法，学会思考和心理学的相关文章，介绍了短视频的害处，独立思考的重要性和自我管理等，这些内容让我受益良多。这让我感受到了独立网站的魅力，因此我偶尔会花些时间寻找一些我”满意“的博客。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>第一次旅行</title>
+      <link>https://www.shuohan.work/zh/posts/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%97%85%E8%A1%8C/</link>
+      <pubDate>Wed, 16 Apr 2025 14:28:19 +0800</pubDate>
+      <guid>https://www.shuohan.work/zh/posts/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%97%85%E8%A1%8C/</guid>
+      <description>&lt;h3 id=&#34;想法&#34;&gt;想法&lt;/h3&gt;
+&lt;p&gt;学校放三天假期在清明节，我决定出去旅行。我寻思到哪里玩时，想到了一位经常爬山的朋友。于是，和朋友说过，他决定带着我去爬山，与此同行的还有他的朋友。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>日记</title>
+      <link>https://www.shuohan.work/zh/posts/%E6%97%A5%E8%AE%B0/</link>
+      <pubDate>Sun, 30 Mar 2025 10:17:28 +0800</pubDate>
+      <guid>https://www.shuohan.work/zh/posts/%E6%97%A5%E8%AE%B0/</guid>
+      <description>&lt;p&gt;日记，我曾在高中时写过一段时间的日记。在学习的压力下，我感到些许烦躁，希望向他人倾诉，又害怕他告密。思来想去，为何不写日记呢。不仅能缓解心情，也不用担心他人是否守密。每天晚上下课，我翻开空白本子，写上今天让我烦心的事情。待我心情好转后，也就没在写日记了。最近在阅读一些文章时，对这些文章作者的文笔感到十分羡慕，这激发了我提高自己写作能力的想法。我想到写日记可以提高作文水平，便为自己定下了坚持写日记的目标。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
