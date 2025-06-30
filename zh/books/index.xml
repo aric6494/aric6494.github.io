@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Books on 赴言</title>
+    <link>https://www.shuohan.work/zh/books/</link>
+    <description>Recent content in Books on 赴言</description>
+    <image>
+      <title>赴言</title>
+      <url>https://www.shuohan.work/images/papermod-cover.png</url>
+      <link>https://www.shuohan.work/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.2</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 30 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.shuohan.work/zh/books/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>人类简史—从动物到上帝</title>
+      <link>https://www.shuohan.work/zh/books/2025/%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E4%BB%8E%E5%8A%A8%E7%89%A9%E5%88%B0%E4%B8%8A%E5%B8%9D/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.shuohan.work/zh/books/2025/%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E4%BB%8E%E5%8A%A8%E7%89%A9%E5%88%B0%E4%B8%8A%E5%B8%9D/</guid>
+      <description>&lt;figure style=&#34;display:flex;&#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;images/book-cover.webp&#34; width=&#34;220&#34;/&gt; &lt;figcaption style=&#34;margin-left: 1em; float: right;&#34;&gt;
+            &lt;q&gt;人类简史—从动物到上帝&lt;/q&gt;&lt;p&gt;Author: Yuval Noah Harari&lt;/p&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;本书提出了&lt;strong&gt;想象的秩序&lt;/strong&gt;，指出当今世界是由人们的想象所构建的。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>这才是心理学</title>
+      <link>https://www.shuohan.work/zh/books/2025/%E8%BF%99%E6%89%8D%E6%98%AF%E5%BF%83%E7%90%86%E5%AD%A6/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.shuohan.work/zh/books/2025/%E8%BF%99%E6%89%8D%E6%98%AF%E5%BF%83%E7%90%86%E5%AD%A6/</guid>
+      <description>&lt;figure style=&#34;display:flex;&#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;images/book-cover.webp&#34; width=&#34;220&#34;/&gt; &lt;figcaption style=&#34;margin-left: 1em; float: right;&#34;&gt;
+            &lt;q&gt;这才是心理学&lt;/q&gt;&lt;p&gt;Author: 基思·斯坦诺维奇&lt;/p&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;本书更像是《学会提问》中对科学研究部分的扩展，以帮助读者辨别市面或媒体所宣传的伪科学心理学。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>学会提问——批判性思维指南</title>
+      <link>https://www.shuohan.work/zh/books/2025/%E5%AD%A6%E4%BC%9A%E6%8F%90%E9%97%AE/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.shuohan.work/zh/books/2025/%E5%AD%A6%E4%BC%9A%E6%8F%90%E9%97%AE/</guid>
+      <description>&lt;figure style=&#34;display:flex;&#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;images/book-cover.webp&#34; width=&#34;220&#34;/&gt; &lt;figcaption style=&#34;margin-left: 1em; float: right;&#34;&gt;
+            &lt;q&gt;学会提问——批判性思维指南&lt;/q&gt;&lt;p&gt;Authors: M. Neil Browne,  Stuart M. Keeley&lt;/p&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;!--
+To generate covers, I use imagemagick&#39;s `convert` command:
+```bash
+convert book-orig.jpg -resize 625x625^ -gravity Center book-cover.webp
+```
+--&gt;
+&lt;p&gt;这本书告诉我在面对许多信息时，我是否选择相信它。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

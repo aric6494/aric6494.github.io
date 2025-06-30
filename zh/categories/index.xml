@@ -11,20 +11,27 @@
     </image>
     <generator>Hugo -- 0.147.2</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 07 Jun 2025 09:13:42 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 30 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.shuohan.work/zh/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>学习</title>
-      <link>https://www.shuohan.work/zh/categories/%E5%AD%A6%E4%B9%A0/</link>
-      <pubDate>Sat, 07 Jun 2025 09:13:42 +0800</pubDate>
-      <guid>https://www.shuohan.work/zh/categories/%E5%AD%A6%E4%B9%A0/</guid>
+      <title>Book</title>
+      <link>https://www.shuohan.work/zh/categories/book/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.shuohan.work/zh/categories/book/</guid>
       <description></description>
     </item>
     <item>
-      <title>日志</title>
-      <link>https://www.shuohan.work/zh/categories/%E6%97%A5%E5%BF%97/</link>
+      <title>所思</title>
+      <link>https://www.shuohan.work/zh/categories/%E6%89%80%E6%80%9D/</link>
+      <pubDate>Sun, 29 Jun 2025 17:13:54 +0800</pubDate>
+      <guid>https://www.shuohan.work/zh/categories/%E6%89%80%E6%80%9D/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>所录</title>
+      <link>https://www.shuohan.work/zh/categories/%E6%89%80%E5%BD%95/</link>
       <pubDate>Sun, 25 May 2025 09:02:54 +0800</pubDate>
-      <guid>https://www.shuohan.work/zh/categories/%E6%97%A5%E5%BF%97/</guid>
+      <guid>https://www.shuohan.work/zh/categories/%E6%89%80%E5%BD%95/</guid>
       <description></description>
     </item>
   </channel>
