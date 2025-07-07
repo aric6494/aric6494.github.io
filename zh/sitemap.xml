@@ -3,13 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.shuohan.work/zh/categories/book/</loc>
-    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.shuohan.work/zh/books/</loc>
-    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.shuohan.work/zh/categories/</loc>
-    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
@@ -22,7 +22,7 @@
                 />
   </url><url>
     <loc>https://www.shuohan.work/zh/tags/</loc>
-    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
@@ -35,7 +35,7 @@
                 />
   </url><url>
     <loc>https://www.shuohan.work/zh/</loc>
-    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
@@ -46,6 +46,12 @@
                 hreflang="zh-CN"
                 href="https://www.shuohan.work/zh/"
                 />
+  </url><url>
+    <loc>https://www.shuohan.work/zh/tags/%E7%BB%8F%E6%B5%8E/</loc>
+    <lastmod>2025-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.shuohan.work/zh/books/2025/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86/</loc>
+    <lastmod>2025-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.shuohan.work/zh/tags/%E5%8E%86%E5%8F%B2/</loc>
     <lastmod>2025-06-30T00:00:00+00:00</lastmod>
