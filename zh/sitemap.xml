@@ -28,6 +28,19 @@
                 href="https://www.shuohan.work/zh/posts/"
                 />
   </url><url>
+    <loc>https://www.shuohan.work/zh/tags/</loc>
+    <lastmod>2025-07-27T09:03:04+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://www.shuohan.work/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://www.shuohan.work/zh/tags/"
+                />
+  </url><url>
     <loc>https://www.shuohan.work/zh/</loc>
     <lastmod>2025-07-27T09:03:04+08:00</lastmod>
     <xhtml:link
@@ -41,27 +54,17 @@
                 href="https://www.shuohan.work/zh/"
                 />
   </url><url>
+    <loc>https://www.shuohan.work/zh/tags/%E9%AB%98%E4%B8%AD/</loc>
+    <lastmod>2025-07-27T09:03:04+08:00</lastmod>
+  </url><url>
     <loc>https://www.shuohan.work/zh/posts/%E6%A2%A6/</loc>
+    <lastmod>2025-07-27T09:03:04+08:00</lastmod>
+  </url><url>
+    <loc>https://www.shuohan.work/zh/tags/%E6%83%85%E7%BB%AA/</loc>
     <lastmod>2025-07-27T09:03:04+08:00</lastmod>
   </url><url>
     <loc>https://www.shuohan.work/zh/categories/%E6%89%80%E6%80%9D/</loc>
     <lastmod>2025-07-27T09:03:04+08:00</lastmod>
-  </url><url>
-    <loc>https://www.shuohan.work/zh/tags/</loc>
-    <lastmod>2025-07-10T10:11:18+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://www.shuohan.work/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://www.shuohan.work/zh/tags/"
-                />
-  </url><url>
-    <loc>https://www.shuohan.work/zh/tags/%E9%AB%98%E4%B8%AD/</loc>
-    <lastmod>2025-07-10T10:11:18+08:00</lastmod>
   </url><url>
     <loc>https://www.shuohan.work/zh/categories/%E6%89%80%E5%BD%95/</loc>
     <lastmod>2025-07-10T10:11:18+08:00</lastmod>
