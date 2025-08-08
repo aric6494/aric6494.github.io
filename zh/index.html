@@ -12,10 +12,10 @@
 <meta name="author" content="">
 <link rel="canonical" href="https://www.shuohan.work/zh/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://www.shuohan.work/assets/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://www.shuohan.work/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://www.shuohan.work/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://www.shuohan.work/apple-touch-icon.png">
+<link rel="icon" href="https://www.shuohan.work/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.shuohan.work/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.shuohan.work/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://www.shuohan.work/assets/apple-touch-icon.png">
 <link rel="mask-icon" href="https://www.shuohan.work/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
@@ -105,7 +105,7 @@ window.MathJax = {
   "name": "赴言",
   "url": "https://www.shuohan.work/zh/",
   "description": "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod",
-  "logo": "https://www.shuohan.work/assets/favicon.ico",
+  "logo": "https://www.shuohan.work/favicon.ico",
   "sameAs": [
       "https://github.com/aric6494?tab=repositories", "index.xml", "mailto:hgdihs670@gmail.com"
   ]
@@ -168,7 +168,7 @@ window.MathJax = {
 </header>
 <main class="main"><div class="profile">
     <div class="profile_inner">
-        <img draggable="false" src="https://cdn.jsdelivr.net/gh/aric6494/images/img/20250502224858808.png" alt="profile image" title=""
+        <img draggable="false" src="https://cdn.jsdelivr.net/gh/aric6494/images/img/20250808084837511.png" alt="profile image" title=""
             height="120" width="120" />
         <h1></h1>
         <span>永远成长</span><div class="social-icons" >
@@ -210,6 +210,386 @@ window.MathJax = {
         </div>
     </div>
 </div>
+<section class="heatmap-section">
+  <div class="heatmap_container">
+  <div class="heatmap_content">
+    <div class="heatmap_week">
+      <span>M</span><span>&nbsp;</span>
+      <span>W</span><span>&nbsp;</span>
+      <span>F</span><span>&nbsp;</span>
+      <span>S</span>
+    </div>
+    <div class="heatmap_main">
+      <div class="month heatmap_month"></div>
+      <div id="heatmap" class="heatmap"></div>
+    </div>
+  </div>
+
+  <div class="heatmap_footer">
+    <div class="heatmap_less">Less</div>
+    <div class="heatmap_level">
+      <span class="heatmap_level_item heatmap_level_0"></span>
+      <span class="heatmap_level_item heatmap_level_1"></span>
+      <span class="heatmap_level_item heatmap_level_2"></span>
+      <span class="heatmap_level_item heatmap_level_3"></span>
+      <span class="heatmap_level_item heatmap_level_4"></span>
+    </div>
+    <div class="heatmap_more">More</div>
+  </div>
+</div>
+
+<style>
+:root {
+  --ht-main: #334155;
+  --ht-day-bg: #ebedf0;
+  --ht-tooltip: #24292f;
+  --ht-tooltip-bg: #fff;
+  --ht-lv-0: #ebebeb;          
+  --ht-lv-1: #c0c0c0;          
+  --ht-lv-2: #999999;          
+  --ht-lv-3: #666666;          
+  --ht-lv-4: #333333;          
+}
+[data-theme="dark"] {
+  --ht-main: #94a3b8;
+  --ht-day-bg: #161b22;
+  --ht-tooltip: #24292f;
+  --ht-tooltip-bg: #fff;
+  --ht-lv-0: #444444;
+  --ht-lv-1: #666666;
+  --ht-lv-2: #888888;
+  --ht-lv-3: #aaaaaa;
+  --ht-lv-4: #cccccc;
+}
+.heatmap_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--ht-main);
+}
+.heatmap_content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.heatmap_week {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  margin-top: 0.25rem;
+  margin-right: 0.25rem;
+}
+.heatmap_main {
+  display: flex;
+  flex-direction: column;
+}
+.heatmap_month {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  text-align: right;
+  margin-top: 0.25rem;
+  margin-right: 0.25rem;
+}
+.heatmap {
+  display: flex;
+  flex-direction: row;
+  height: 84px;
+}
+.heatmap_footer {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+.heatmap_level {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+  margin: 0 0.25rem;
+  height: 10px;
+}
+.heatmap_level_item {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 0.125rem;
+}
+.heatmap_level_0 { background: var(--ht-lv-0); }
+.heatmap_level_1 { background: var(--ht-lv-1); }
+.heatmap_level_2 { background: var(--ht-lv-2); }
+.heatmap_level_3 { background: var(--ht-lv-3); }
+.heatmap_level_4 { background: var(--ht-lv-4); }
+.heatmap_day {
+  width: 10px;
+  height: 10px;
+  background-color: var(--ht-day-bg);
+  margin: 1px;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+}
+.heatmap_day_level_0 { background-color: var(--ht-lv-0); }
+.heatmap_day_level_1 { background-color: var(--ht-lv-1); }
+.heatmap_day_level_2 { background-color: var(--ht-lv-2); }
+.heatmap_day_level_3 { background-color: var(--ht-lv-3); }
+.heatmap_day_level_4 { background-color: var(--ht-lv-4); }
+.heatmap_tooltip {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  background-color: var(--ht-tooltip-bg);
+  color: var(--ht-tooltip);
+  font-size: 12px;
+  line-height: 16px;
+  padding: 8px;
+  border-radius: 3px;
+  white-space: pre-wrap;
+  opacity: 1;
+  transition: 0.3s;
+  z-index: 1000;
+  text-align: right;
+}
+.heatmap_tooltip_count,
+.heatmap_tooltip_post {
+  display: inline-block;
+}
+.heatmap_tooltip_title,
+.heatmap_tooltip_date {
+  display: block;
+}
+.heatmap_tooltip_date {
+  margin: 0 0.25rem;
+}
+</style>
+
+<script>
+  
+  var blogInfo = {
+    "pages": [
+      
+      
+      
+      {
+        "title": "日记",
+        "date": "2025-03-30",
+        "year": "2025",
+        "month": "03",
+        "day": "30",
+        "word_count": "563"
+      },
+      
+      {
+        "title": "第一次旅行",
+        "date": "2025-04-16",
+        "year": "2025",
+        "month": "04",
+        "day": "16",
+        "word_count": "2134"
+      },
+      
+      {
+        "title": "学会提问——批判性思维指南",
+        "date": "2025-05-10",
+        "year": "2025",
+        "month": "05",
+        "day": "10",
+        "word_count": "973"
+      },
+      
+      {
+        "title": "改变",
+        "date": "2025-05-20",
+        "year": "2025",
+        "month": "05",
+        "day": "20",
+        "word_count": "670"
+      },
+      
+      {
+        "title": "大学心路",
+        "date": "2025-05-25",
+        "year": "2025",
+        "month": "05",
+        "day": "25",
+        "word_count": "2268"
+      },
+      
+      {
+        "title": "目标与想象",
+        "date": "2025-06-07",
+        "year": "2025",
+        "month": "06",
+        "day": "07",
+        "word_count": "1077"
+      },
+      
+      {
+        "title": "〈人类简史〉删减",
+        "date": "2025-06-29",
+        "year": "2025",
+        "month": "06",
+        "day": "29",
+        "word_count": "521"
+      },
+      
+      {
+        "title": "这才是心理学",
+        "date": "2025-06-30",
+        "year": "2025",
+        "month": "06",
+        "day": "30",
+        "word_count": "228"
+      },
+      
+      {
+        "title": "人类简史—从动物到上帝",
+        "date": "2025-06-30",
+        "year": "2025",
+        "month": "06",
+        "day": "30",
+        "word_count": "247"
+      },
+      
+      {
+        "title": "经济学原理（第七版）",
+        "date": "2025-07-06",
+        "year": "2025",
+        "month": "07",
+        "day": "06",
+        "word_count": "19"
+      },
+      
+      {
+        "title": "炎炎夏日",
+        "date": "2025-07-10",
+        "year": "2025",
+        "month": "07",
+        "day": "10",
+        "word_count": "614"
+      },
+      
+      {
+        "title": "梦",
+        "date": "2025-07-27",
+        "year": "2025",
+        "month": "07",
+        "day": "27",
+        "word_count": "432"
+      },
+      
+      {
+        "title": "1984",
+        "date": "2025-08-03",
+        "year": "2025",
+        "month": "08",
+        "day": "03",
+        "word_count": "318"
+      }
+      
+    ]
+  };
+
+  
+  const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const monthDiv = document.querySelector('.heatmap_month');
+  const monthsToShow = window.innerWidth < 768 ? 5 : 12;
+  const now = new Date();
+  const startMonth = (now.getMonth() - (monthsToShow - 1) + 12) % 12;
+  for (let i = startMonth; i < startMonth + monthsToShow; i++) {
+    const span = document.createElement('span');
+    span.textContent = monthNames[i % 12];
+    monthDiv.appendChild(span);
+  }
+
+  function getStartDate() {
+    const today = new Date();
+    const start = new Date(today.getFullYear(), today.getMonth() - monthsToShow + 1, 1);
+    while (start.getDay() !== 1) start.setDate(start.getDate() + 1);
+    return start;
+  }
+
+  function formatDate(date) {
+    const options = { month: 'short', day: 'numeric', year: 'numeric' };
+    return date.toLocaleDateString('en-US', options);
+  }
+
+  function createDay(date, title, count, post) {
+    const day = document.createElement("div");
+    day.className = "heatmap_day";
+    day.dataset.title = title;
+    day.dataset.count = count;
+    day.dataset.post = post;
+    day.dataset.date = date;
+
+    day.addEventListener("mouseenter", () => {
+      const tooltip = document.createElement("div");
+      tooltip.className = "heatmap_tooltip";
+      tooltip.innerHTML = `
+        ${post !== "0" ? `<span class="heatmap_tooltip_post">共 ${post} 篇</span>` : ""}
+        ${count !== "0" ? `<span class="heatmap_tooltip_count"> ${count} 字；</span>` : ""}
+        ${title ? `<span class="heatmap_tooltip_title">《${title}》</span>` : ""}
+        <span class="heatmap_tooltip_date">${date}</span>
+      `;
+      day.appendChild(tooltip);
+    });
+
+    day.addEventListener("mouseleave", () => {
+      const tooltip = day.querySelector(".heatmap_tooltip");
+      if (tooltip) day.removeChild(tooltip);
+    });
+
+    const c = parseInt(count, 10);
+    if (c === 0) day.classList.add("heatmap_day_level_0");
+    else if (c < 1000) day.classList.add("heatmap_day_level_1");
+    else if (c < 2000) day.classList.add("heatmap_day_level_2");
+    else if (c < 3000) day.classList.add("heatmap_day_level_3");
+    else day.classList.add("heatmap_day_level_4");
+
+    return day;
+  }
+
+  function createHeatmap() {
+    const container = document.getElementById('heatmap');
+    const start = getStartDate();
+    const end = new Date();
+    let current = new Date(start);
+    let week = document.createElement('div');
+    week.className = 'heatmap_week';
+    container.appendChild(week);
+
+    let i = 0;
+    while (current <= end) {
+      if (i % 7 === 0 && i !== 0) {
+        week = document.createElement('div');
+        week.className = 'heatmap_week';
+        container.appendChild(week);
+      }
+
+      const dateStr = current.toISOString().split("T")[0];
+      const matched = blogInfo.pages.filter(p => p.date === dateStr);
+      const titles = matched.map(p => p.title).join('<br />');
+      const totalWords = matched.reduce((sum, p) => sum + parseInt(p.word_count, 10), 0);
+      const posts = matched.length;
+      const day = createDay(formatDate(current), titles, totalWords.toString(), posts.toString());
+      week.appendChild(day);
+
+      current.setDate(current.getDate() + 1);
+      i++;
+    }
+  }
+
+  createHeatmap();
+</script>
+
+</section>
 
     </main>
     
@@ -229,7 +609,6 @@ window.MathJax = {
   
 
   
-
 
 
 
