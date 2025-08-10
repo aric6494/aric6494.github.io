@@ -143,6 +143,1414 @@ convert book-orig.jpg -resize 625x625^ -gravity Center book-cover.webp
       <description>&lt;p&gt;日记，我曾在高中时写过一段时间的日记。在学习的压力下，我感到些许烦躁，希望向他人倾诉，又害怕他告密。思来想去，为何不写日记呢。不仅能缓解心情，也不用担心他人是否守密。每天晚上下课，我翻开空白本子，写上今天让我烦心的事情。待我心情好转后，也就没在写日记了。最近在阅读一些文章时，对这些文章作者的文笔感到十分羡慕，这激发了我提高自己写作能力的想法。我想到写日记可以提高作文水平，便为自己定下了坚持写日记的目标。&lt;/p&gt;</description>
     </item>
     <item>
+      <title></title>
+      <link>https://www.shuohan.work/zh/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.shuohan.work/zh/about/</guid>
+      <description>&lt;p&gt;想要学习感兴趣的一切的东西，记录生活，成长和经历。热爱听歌、散步、看电影，平常也会读书，偶尔“折腾”。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;音乐：喜欢节奏适当的音乐，不会过于热烈，也不会太过轻柔。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://www.shuohan.work/zh/statics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.shuohan.work/zh/statics/</guid>
+      <description>&lt;p&gt;一个统计页面。&lt;/p&gt;
+&lt;h3 id=&#34;热力图&#34;&gt;热力图&lt;/h3&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;zh-CN&#34;&gt;
+&lt;head&gt;
+    &lt;meta charset=&#34;UTF-8&#34;&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
+    &lt;title&gt;博客文章热力图&lt;/title&gt;
+    &lt;style&gt;
+        :root {
+          --ht-main: #334155;
+          --ht-day-bg: #ebedf0;
+          --ht-tooltip: #000000;
+          --ht-tooltip-bg: #ffffff;
+          --ht-lv-0: #ebebeb;          
+          --ht-lv-1: #c0c0c0;          
+          --ht-lv-2: #999999;          
+          --ht-lv-3: #666666;          
+          --ht-lv-4: #333333;          
+        }
+        [data-theme=&#34;dark&#34;] {
+          --ht-main: #94a3b8;
+          --ht-day-bg: #161b22;
+          --ht-tooltip: #000000;
+          --ht-tooltip-bg: #ffffff;
+          --ht-lv-0: #444444;
+          --ht-lv-1: #666666;
+          --ht-lv-2: #888888;
+          --ht-lv-3: #aaaaaa;
+          --ht-lv-4: #cccccc;
+        }
+        .heatmap_container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 10px;
+          line-height: 12px;
+          color: var(--ht-main);
+          position: relative;
+          top: 10px;
+        }
+        .heatmap_content {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-end;
+        }
+        .heatmap_week {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-end;
+          text-align: right;
+          margin-top: 0.25rem;
+          margin-right: 0.25rem;
+        }
+        .heatmap_main {
+          display: flex;
+          flex-direction: column;
+        }
+        .heatmap_month {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: flex-end;
+          text-align: right;
+          margin-top: 0.25rem;
+          margin-right: 0.25rem;
+        }
+        .heatmap {
+          display: flex;
+          flex-direction: row;
+          height: 84px;
+        }
+        .heatmap_footer {
+          display: flex;
+          align-items: center;
+          margin-top: 0.5rem;
+        }
+        .heatmap_level {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 2px;
+          margin: 0 0.25rem;
+          height: 10px;
+        }
+        .heatmap_level_item {
+          display: block;
+          width: 10px;
+          height: 10px;
+          border-radius: 0.125rem;
+        }
+        .heatmap_level_0 { background: var(--ht-lv-0); }
+        .heatmap_level_1 { background: var(--ht-lv-1); }
+        .heatmap_level_2 { background: var(--ht-lv-2); }
+        .heatmap_level_3 { background: var(--ht-lv-3); }
+        .heatmap_level_4 { background: var(--ht-lv-4); }
+        .heatmap_day {
+          width: 10px;
+          height: 10px;
+          background-color: var(--ht-day-bg);
+          margin: 1px;
+          border-radius: 2px;
+          display: inline-block;
+          position: relative;
+          cursor: pointer;
+        }
+        .heatmap_day_level_0 { background-color: var(--ht-lv-0); }
+        .heatmap_day_level_1 { background-color: var(--ht-lv-1); }
+        .heatmap_day_level_2 { background-color: var(--ht-lv-2); }
+        .heatmap_day_level_3 { background-color: var(--ht-lv-3); }
+        .heatmap_day_level_4 { background-color: var(--ht-lv-4); }
+        
+         
+        .heatmap_tooltip {
+          position: fixed;
+          background-color: var(--ht-tooltip-bg);
+          color: var(--ht-tooltip);
+          font-size: 12px;
+          line-height: 16px;
+          padding: 12px 16px;
+          border-radius: 8px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          border: 1px solid #e5e7eb;
+          white-space: nowrap;
+          z-index: 1000;
+          pointer-events: none;
+          opacity: 0;
+          transform: scale(0.9);
+          transition: opacity 0.2s ease, transform 0.2s ease;
+          max-width: 300px;
+        }
+        
+        .heatmap_tooltip.show {
+          opacity: 1;
+          transform: scale(1);
+        }
+        
+        .heatmap_tooltip_count,
+        .heatmap_tooltip_post {
+          font-weight: 600;
+          color: #1f2937;
+        }
+        
+        .heatmap_tooltip_title {
+          display: block;
+          font-weight: 500;
+          color: #374151;
+          margin-top: 4px;
+          white-space: normal;
+          word-wrap: break-word;
+        }
+        
+        .heatmap_tooltip_date {
+          display: block;
+          color: #6b7280;
+          font-size: 11px;
+          margin-top: 6px;
+        }
+        
+         
+        .heatmap_less, .heatmap_more {
+          font-size: 10px;
+          color: var(--ht-main);
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&#34;heatmap_container&#34;&gt;
+      &lt;div class=&#34;heatmap_content&#34;&gt;
+        &lt;div class=&#34;heatmap_week&#34;&gt;
+          &lt;span&gt;M&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;
+          &lt;span&gt;W&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;
+          &lt;span&gt;F&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;
+          &lt;span&gt;S&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;heatmap_main&#34;&gt;
+          &lt;div class=&#34;month heatmap_month&#34;&gt;&lt;/div&gt;
+          &lt;div id=&#34;heatmap&#34; class=&#34;heatmap&#34;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&#34;heatmap_footer&#34;&gt;
+        &lt;div class=&#34;heatmap_less&#34;&gt;less&lt;/div&gt;
+        &lt;div class=&#34;heatmap_level&#34;&gt;
+          &lt;span class=&#34;heatmap_level_item heatmap_level_0&#34;&gt;&lt;/span&gt;
+          &lt;span class=&#34;heatmap_level_item heatmap_level_1&#34;&gt;&lt;/span&gt;
+          &lt;span class=&#34;heatmap_level_item heatmap_level_2&#34;&gt;&lt;/span&gt;
+          &lt;span class=&#34;heatmap_level_item heatmap_level_3&#34;&gt;&lt;/span&gt;
+          &lt;span class=&#34;heatmap_level_item heatmap_level_4&#34;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;heatmap_more&#34;&gt;more&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    
+    &lt;div id=&#34;globalTooltip&#34; class=&#34;heatmap_tooltip&#34;&gt;&lt;/div&gt;
+
+    &lt;script&gt;
+      
+      var blogInfo = {
+    &#34;pages&#34;: [
+      
+      
+      
+      {
+        &#34;title&#34;: &#34;日记&#34;,
+        &#34;date&#34;: &#34;2025-03-30&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;03&#34;,
+        &#34;day&#34;: &#34;30&#34;,
+        &#34;word_count&#34;: &#34;563&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;第一次旅行&#34;,
+        &#34;date&#34;: &#34;2025-04-16&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;04&#34;,
+        &#34;day&#34;: &#34;16&#34;,
+        &#34;word_count&#34;: &#34;2134&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;学会提问——批判性思维指南&#34;,
+        &#34;date&#34;: &#34;2025-05-10&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;05&#34;,
+        &#34;day&#34;: &#34;10&#34;,
+        &#34;word_count&#34;: &#34;973&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;改变&#34;,
+        &#34;date&#34;: &#34;2025-05-20&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;05&#34;,
+        &#34;day&#34;: &#34;20&#34;,
+        &#34;word_count&#34;: &#34;670&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;大学心路&#34;,
+        &#34;date&#34;: &#34;2025-05-25&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;05&#34;,
+        &#34;day&#34;: &#34;25&#34;,
+        &#34;word_count&#34;: &#34;2268&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;目标与想象&#34;,
+        &#34;date&#34;: &#34;2025-06-07&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;06&#34;,
+        &#34;day&#34;: &#34;07&#34;,
+        &#34;word_count&#34;: &#34;1077&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;〈人类简史〉删减&#34;,
+        &#34;date&#34;: &#34;2025-06-29&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;06&#34;,
+        &#34;day&#34;: &#34;29&#34;,
+        &#34;word_count&#34;: &#34;521&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;这才是心理学&#34;,
+        &#34;date&#34;: &#34;2025-06-30&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;06&#34;,
+        &#34;day&#34;: &#34;30&#34;,
+        &#34;word_count&#34;: &#34;228&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;人类简史—从动物到上帝&#34;,
+        &#34;date&#34;: &#34;2025-06-30&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;06&#34;,
+        &#34;day&#34;: &#34;30&#34;,
+        &#34;word_count&#34;: &#34;247&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;经济学原理（第七版）&#34;,
+        &#34;date&#34;: &#34;2025-07-06&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;07&#34;,
+        &#34;day&#34;: &#34;06&#34;,
+        &#34;word_count&#34;: &#34;19&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;炎炎夏日&#34;,
+        &#34;date&#34;: &#34;2025-07-10&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;07&#34;,
+        &#34;day&#34;: &#34;10&#34;,
+        &#34;word_count&#34;: &#34;614&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;梦&#34;,
+        &#34;date&#34;: &#34;2025-07-27&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;07&#34;,
+        &#34;day&#34;: &#34;27&#34;,
+        &#34;word_count&#34;: &#34;432&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;1984&#34;,
+        &#34;date&#34;: &#34;2025-08-03&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;08&#34;,
+        &#34;day&#34;: &#34;03&#34;,
+        &#34;word_count&#34;: &#34;318&#34;
+      }
+      
+    ]
+  };
+
+      
+      const globalTooltip = document.getElementById(&#39;globalTooltip&#39;);
+      let tooltipTimeout;
+
+      
+      const monthNames = [&#39;Jan&#39;, &#39;Feb&#39;, &#39;Mar&#39;, &#39;Apr&#39;, &#39;May&#39;, &#39;Jun&#39;, &#39;Jul&#39;, &#39;Aug&#39;, &#39;Sep&#39;, &#39;Oct&#39;, &#39;Nov&#39;, &#39;Dec&#39;];
+      const monthDiv = document.querySelector(&#39;.heatmap_month&#39;);
+      const monthsToShow = window.innerWidth &lt; 768 ? 5 : 12;
+      const now = new Date();
+      const startMonth = (now.getMonth() - (monthsToShow - 1) + 12) % 12;
+      for (let i = startMonth; i &lt; startMonth + monthsToShow; i++) {
+        const span = document.createElement(&#39;span&#39;);
+        span.textContent = monthNames[i % 12];
+        monthDiv.appendChild(span);
+      }
+
+      function getStartDate() {
+        const today = new Date();
+        const start = new Date(today.getFullYear(), today.getMonth() - monthsToShow + 1, 1);
+        while (start.getDay() !== 1) start.setDate(start.getDate() + 1);
+        return start;
+      }
+
+      function formatDate(date) {
+        const options = { month: &#39;short&#39;, day: &#39;numeric&#39;, year: &#39;numeric&#39; };
+        return date.toLocaleDateString(&#39;en-US&#39;, options);
+      }
+
+      function showTooltip(event, title, count, post, date) {
+        clearTimeout(tooltipTimeout);
+        
+        let content = &#39;&#39;;
+        if (post !== &#34;0&#34;) {
+          content += `&lt;span class=&#34;heatmap_tooltip_post&#34;&gt;共 ${post} 篇&lt;/span&gt;`;
+        }
+        if (count !== &#34;0&#34;) {
+          content += `&lt;span class=&#34;heatmap_tooltip_count&#34;&gt; ${count} 字；&lt;/span&gt;`;
+        }
+        if (title) {
+          content += `&lt;span class=&#34;heatmap_tooltip_title&#34;&gt;《${title}》&lt;/span&gt;`;
+        }
+        content += `&lt;span class=&#34;heatmap_tooltip_date&#34;&gt;${date}&lt;/span&gt;`;
+        
+        globalTooltip.innerHTML = content;
+        
+        
+        const rect = event.target.getBoundingClientRect();
+        const tooltipRect = globalTooltip.getBoundingClientRect();
+        
+        let left = rect.left + rect.width / 2 - tooltipRect.width / 2;
+        let top = rect.top - tooltipRect.height - 10;
+        
+        
+        if (left &lt; 10) left = 10;
+        if (left + tooltipRect.width &gt; window.innerWidth - 10) {
+          left = window.innerWidth - tooltipRect.width - 10;
+        }
+        if (top &lt; 10) {
+          top = rect.bottom + 10;
+        }
+        
+        globalTooltip.style.left = left + &#39;px&#39;;
+        globalTooltip.style.top = top + &#39;px&#39;;
+        
+        
+        globalTooltip.classList.add(&#39;show&#39;);
+      }
+
+      function hideTooltip() {
+        tooltipTimeout = setTimeout(() =&gt; {
+          globalTooltip.classList.remove(&#39;show&#39;);
+        }, 100);
+      }
+
+      function createDay(date, title, count, post) {
+        const day = document.createElement(&#34;div&#34;);
+        day.className = &#34;heatmap_day&#34;;
+        day.dataset.title = title;
+        day.dataset.count = count;
+        day.dataset.post = post;
+        day.dataset.date = date;
+
+        
+        day.addEventListener(&#34;mouseenter&#34;, (event) =&gt; {
+          showTooltip(event, title, count, post, date);
+        });
+
+        
+        day.addEventListener(&#34;mouseleave&#34;, () =&gt; {
+          hideTooltip();
+        });
+
+        
+        const c = parseInt(count, 10);
+        if (c === 0) day.classList.add(&#34;heatmap_day_level_0&#34;);
+        else if (c &lt; 1000) day.classList.add(&#34;heatmap_day_level_1&#34;);
+        else if (c &lt; 2000) day.classList.add(&#34;heatmap_day_level_2&#34;);
+        else if (c &lt; 3000) day.classList.add(&#34;heatmap_day_level_3&#34;);
+        else day.classList.add(&#34;heatmap_day_level_4&#34;);
+
+        return day;
+      }
+
+      function createHeatmap() {
+        const container = document.getElementById(&#39;heatmap&#39;);
+        const start = getStartDate();
+        const end = new Date();
+        let current = new Date(start);
+        let week = document.createElement(&#39;div&#39;);
+        week.className = &#39;heatmap_week&#39;;
+        container.appendChild(week);
+
+        let i = 0;
+        while (current &lt;= end) {
+          if (i % 7 === 0 &amp;&amp; i !== 0) {
+            week = document.createElement(&#39;div&#39;);
+            week.className = &#39;heatmap_week&#39;;
+            container.appendChild(week);
+          }
+
+          const dateStr = `${current.getFullYear()}-${(current.getMonth()+1).toString().padStart(2,&#39;0&#39;)}-${current.getDate().toString().padStart(2,&#39;0&#39;)}`;
+          const matched = blogInfo.pages.filter(p =&gt; p.date === dateStr);
+          const titles = matched.map(p =&gt; p.title).join(&#39;&lt;br /&gt;&#39;);
+          const totalWords = matched.reduce((sum, p) =&gt; sum + parseInt(p.word_count, 10), 0);
+          const posts = matched.length;
+          const day = createDay(formatDate(current), titles, totalWords.toString(), posts.toString());
+          week.appendChild(day);
+
+          current.setDate(current.getDate() + 1);
+          i++;
+        }
+      }
+
+      
+      globalTooltip.addEventListener(&#39;mouseenter&#39;, () =&gt; {
+        clearTimeout(tooltipTimeout);
+      });
+
+      globalTooltip.addEventListener(&#39;mouseleave&#39;, () =&gt; {
+        hideTooltip();
+      });
+
+      
+      createHeatmap();
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;h3 id=&#34;日历&#34;&gt;日历&lt;/h3&gt;
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;zh-CN&#34;&gt;
+&lt;head&gt;
+    &lt;meta charset=&#34;UTF-8&#34;&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
+    &lt;title&gt;修复后的发布日历&lt;/title&gt;
+    &lt;style&gt;
+        :root{
+          --ht-main: #334155;
+          --ht-day-bg: #fffdfd;
+          --ht-tooltip: #000000;
+          --ht-tooltip-bg: #ffffff;
+          --ht-lv-0: #ebebeb;
+          --ht-lv-1: #c0c0c0;
+          --ht-lv-2: #999999;
+          --ht-lv-3: #666666;
+          --ht-lv-4: #333333;
+        }
+        [data-theme=&#34;dark&#34;]{
+          --ht-main: #94a3b8;
+          --ht-day-bg: #161b22;
+          --ht-tooltip: #000000;
+          --ht-tooltip-bg: #ffffff;
+          --ht-lv-0: #444444;
+          --ht-lv-1: #666666;
+          --ht-lv-2: #888888;
+          --ht-lv-3: #aaaaaa;
+          --ht-lv-4: #cccccc;
+        }
+
+         
+        .pm-calendar{ 
+          max-width: 460px; 
+          background:var(--ht-day-bg); 
+          border-radius:14px; 
+          padding:18px; 
+          box-shadow:0 1px 6px rgba(0,0,0,0.03); 
+          font-family:-apple-system,BlinkMacSystemFont,&#34;Segoe UI&#34;,Roboto,&#34;Helvetica Neue&#34;,Arial; 
+          color:var(--ht-main); 
+          margin: 0 auto; 
+          position: relative;
+          width: 100%;
+          box-sizing: border-box;
+        }
+        
+         
+        .pm-cal-header{ 
+          display:flex; 
+          align-items:center; 
+          justify-content:space-between; 
+          margin-bottom:10px; 
+          gap:8px;
+          flex-wrap: nowrap;
+        }
+        
+        .pm-arrow{ 
+          background:transparent; 
+          border:0; 
+          font-size:20px; 
+          cursor:pointer; 
+          padding:8px; 
+          color:var(--ht-main);
+          border-radius: 6px;
+          transition: background-color 0.2s;
+          flex-shrink: 0;
+          min-width: 36px;
+          height: 36px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          touch-action: manipulation;
+        }
+        
+        .pm-arrow:hover {
+          background-color: rgba(0,0,0,0.05);
+        }
+        
+        .pm-arrow:active {
+          background-color: rgba(0,0,0,0.1);
+        }
+        
+        .pm-title{ 
+          display:flex; 
+          align-items:center; 
+          gap:8px;
+          flex: 1;
+          justify-content: center;
+          min-width: 0;
+        }
+        
+         
+        .pm-select{ 
+           
+          appearance: none !important;
+          -webkit-appearance: none !important;
+          -moz-appearance: none !important;
+          
+          border: 1px solid rgba(0,0,0,0.1);
+          background: var(--ht-day-bg);
+          background-image: url(&#34;data:image/svg+xml;charset=UTF-8,%3csvg xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 24 24&#39; fill=&#39;none&#39; stroke=&#39;currentColor&#39; stroke-width=&#39;2&#39; stroke-linecap=&#39;round&#39; stroke-linejoin=&#39;round&#39;%3e%3cpolyline points=&#39;6,9 12,15 18,9&#39;%3e%3c/polyline%3e%3c/svg%3e&#34;);
+          background-repeat: no-repeat;
+          background-position: right 8px center;
+          background-size: 16px;
+          font-size: 16px;
+          font-weight: 600;
+          padding: 8px 32px 8px 12px;
+          color: var(--ht-main);
+          cursor: pointer;
+          border-radius: 6px;
+          transition: border-color 0.2s;
+          min-width: 0;
+          
+           
+          -webkit-tap-highlight-color: transparent;
+          outline: none;
+          
+           
+          background-color: var(--ht-day-bg) !important;
+        }
+        
+         
+        .pm-select::-ms-expand {
+          display: none;
+        }
+        
+         
+        @supports (-webkit-appearance: none) {
+          .pm-select {
+            -webkit-appearance: none !important;
+          }
+        }
+        
+        .pm-weekdays{ 
+          display:grid; 
+          grid-template-columns:repeat(7,1fr); 
+          text-align:center; 
+          font-size:13px; 
+          color:var(--ht-main); 
+          margin-bottom:8px;
+          font-weight: 500;
+        }
+        
+        .pm-weekdays div {
+          padding: 8px 0;
+        }
+        
+        .pm-days{ 
+          display:grid; 
+          grid-template-columns:repeat(7,1fr); 
+          gap:8px; 
+          min-height: 260px; 
+          padding:6px 4px;
+        }
+        
+        .pm-day{ 
+          width:100%; 
+          aspect-ratio:1/1; 
+          display:flex; 
+          align-items:center; 
+          justify-content:center; 
+          border-radius:8px; 
+          font-size:14px; 
+          color:var(--ht-main); 
+          background:transparent; 
+          transition: transform .12s, opacity .14s, background-color .2s; 
+          user-select:none; 
+          cursor:pointer; 
+          padding:4px; 
+          box-sizing:border-box;
+          position: relative;
+          touch-action: manipulation;
+          min-height: 32px;
+        }
+        
+        .pm-day:not(.pm-empty):hover {
+          transform: scale(1.05);
+        }
+        
+        .pm-day:not(.pm-empty):active {
+          transform: scale(0.95);
+        }
+        
+        .pm-empty{ 
+          background:transparent; 
+          pointer-events:none; 
+          cursor: default;
+        }
+        
+        .pm-day.today{ 
+          box-shadow: inset 0 0 0 2px rgba(66,133,244,0.3);
+          font-weight: 600;
+        }
+
+        .pm-day.level-0{ background: var(--ht-lv-0); color: var(--ht-main); }
+        .pm-day.level-1{ background: var(--ht-lv-1); color: var(--ht-main); }
+        .pm-day.level-2{ background: var(--ht-lv-2); color: var(--ht-main); }
+        .pm-day.level-3{ background: var(--ht-lv-3); color: #fff; font-weight:600; }
+        .pm-day.level-4{ background: var(--ht-lv-4); color: #fff; font-weight:700; }
+
+        .pm-legend{ 
+          display:flex; 
+          align-items:center; 
+          justify-content:flex-end; 
+          gap:8px; 
+          margin-top:12px; 
+          font-size:12px; 
+          color:var(--ht-main);
+        }
+        
+        .legend-squares{ 
+          display:flex; 
+          gap:4px; 
+          align-items:center; 
+          margin:0 6px;
+        }
+        
+        .legend-squares .sq{ 
+          width:16px; 
+          height:12px; 
+          border-radius:3px; 
+          display:inline-block;
+        }
+        
+        .legend-squares .sq-0{ background:var(--ht-lv-0); } 
+        .legend-squares .sq-1{ background:var(--ht-lv-1); }
+        .legend-squares .sq-2{ background:var(--ht-lv-2); } 
+        .legend-squares .sq-3{ background:var(--ht-lv-3); } 
+        .legend-squares .sq-4{ background:var(--ht-lv-4); }
+
+         
+        .pm-tooltip{
+          position:absolute;
+          min-width:180px;
+          max-width:320px;
+          padding:12px;
+          background:var(--ht-tooltip-bg);
+          color:var(--ht-tooltip);
+          border-radius:8px;
+          box-shadow:0 8px 24px rgba(0,0,0,0.15);
+          font-size:13px;
+          line-height:1.4;
+          z-index:1000;
+          opacity:0;
+          pointer-events:none;
+          transform-origin:center top;
+          transition:opacity .2s, transform .2s;
+          display: none;
+          left: 0; 
+          top: 0;
+          border: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        .pm-tooltip.visible{
+          display: block;
+          opacity:1;
+          pointer-events:auto;
+        }
+
+         
+        .pm-tooltip .tp-date{ 
+          font-weight:700; 
+          margin-bottom:8px;
+          font-size: 14px;
+        }
+        
+        .pm-tooltip .tp-posts{ 
+          max-height:180px; 
+          overflow:auto; 
+          margin:0; 
+          padding:0; 
+          list-style:none;
+        }
+        
+        .pm-tooltip .tp-posts::-webkit-scrollbar {
+          width: 4px;
+        }
+        
+        .pm-tooltip .tp-posts::-webkit-scrollbar-track {
+          background: rgba(0,0,0,0.05);
+          border-radius: 2px;
+        }
+        
+        .pm-tooltip .tp-posts::-webkit-scrollbar-thumb {
+          background: rgba(0,0,0,0.2);
+          border-radius: 2px;
+        }
+        
+        .pm-tooltip .tp-posts li{ 
+          margin:6px 0; 
+          padding:0;
+        }
+        
+        .pm-tooltip .tp-post-title{ 
+          color:var(--ht-tooltip); 
+          font-weight:500; 
+          display:block; 
+          max-width:280px; 
+          white-space:nowrap; 
+          overflow:hidden; 
+          text-overflow:ellipsis;
+        }
+        
+        .pm-tooltip .tp-post-meta{ 
+          color:#888; 
+          font-size:11px; 
+          margin-left:6px;
+        }
+        
+        .pm-tooltip .tp-meta{ 
+          color:#666; 
+          font-size:12px; 
+          margin-top:8px; 
+          padding-top: 6px;
+          border-top: 1px solid rgba(0,0,0,0.1);
+        }
+
+         
+        @media (max-width: 480px) { 
+          .pm-calendar{ 
+            padding: 12px; 
+            border-radius: 10px;
+            margin: 8px;
+            max-width: none;
+          } 
+          
+          .pm-select{ 
+            font-size: 16px !important;  
+            padding: 8px 32px 8px 12px;
+             
+            background-image: url(&#34;data:image/svg+xml;charset=UTF-8,%3csvg xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 24 24&#39; fill=&#39;none&#39; stroke=&#39;%23334155&#39; stroke-width=&#39;2&#39; stroke-linecap=&#39;round&#39; stroke-linejoin=&#39;round&#39;%3e%3cpolyline points=&#39;6,9 12,15 18,9&#39;%3e%3c/polyline%3e%3c/svg%3e&#34;) !important;
+          } 
+          
+          .pm-weekdays{ 
+            font-size: 12px;
+          }
+          
+          .pm-weekdays div {
+            padding: 6px 0;
+          }
+          
+          .pm-day{ 
+            font-size: 13px;
+            min-height: 28px;
+          } 
+          
+          .pm-days {
+            gap: 6px;
+          }
+          
+          .legend-squares .sq{ 
+            width: 14px; 
+            height: 10px;
+          } 
+          
+          .pm-tooltip{ 
+            font-size: 12px; 
+            min-width: 160px;
+            max-width: calc(100vw - 32px);
+            padding: 10px;
+          }
+          
+          .pm-tooltip .tp-post-title {
+            max-width: calc(100vw - 80px);
+          }
+          
+          .pm-arrow {
+            font-size: 18px;
+            padding: 6px;
+            min-width: 32px;
+            height: 32px;
+          }
+          
+          .pm-legend {
+            font-size: 11px;
+            gap: 6px;
+          }
+        }
+        
+         
+        @media (prefers-color-scheme: dark) {
+          :root {
+            --ht-main: #94a3b8;
+            --ht-day-bg: #161b22;
+            --ht-tooltip: #ffffff;
+            --ht-tooltip-bg: #1f2937;
+            --ht-lv-0: #444444;
+            --ht-lv-1: #666666;
+            --ht-lv-2: #888888;
+            --ht-lv-3: #aaaaaa;
+            --ht-lv-4: #cccccc;
+          }
+          
+          .pm-select {
+            border-color: rgba(255,255,255,0.2);
+            background-image: url(&#34;data:image/svg+xml;charset=UTF-8,%3csvg xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 24 24&#39; fill=&#39;none&#39; stroke=&#39;%2394a3b8&#39; stroke-width=&#39;2&#39; stroke-linecap=&#39;round&#39; stroke-linejoin=&#39;round&#39;%3e%3cpolyline points=&#39;6,9 12,15 18,9&#39;%3e%3c/polyline%3e%3c/svg%3e&#34;) !important;
+          }
+          
+          .pm-tooltip {
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+            border-color: rgba(255,255,255,0.1);
+          }
+        }
+        
+         
+        .pm-day:focus {
+          outline: 2px solid #4285f4;
+          outline-offset: 2px;
+        }
+        
+        .pm-select:focus {
+          outline: 2px solid #4285f4;
+          outline-offset: 1px;
+        }
+        
+         
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+          .pm-select {
+            font-size: 16px;
+          }
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&#34;pm-calendar&#34; id=&#34;pmCalendar&#34;&gt;
+      &lt;div class=&#34;pm-cal-header&#34;&gt;
+        &lt;button class=&#34;pm-arrow&#34; id=&#34;calPrev&#34; aria-label=&#34;上一月&#34;&gt;◀&lt;/button&gt;
+        &lt;div class=&#34;pm-title&#34;&gt;
+          &lt;select id=&#34;yearSelect&#34; aria-label=&#34;选择年份&#34; class=&#34;pm-select year-select&#34;&gt;&lt;/select&gt;
+          &lt;select id=&#34;monthSelect&#34; aria-label=&#34;选择月份&#34; class=&#34;pm-select month-select&#34;&gt;&lt;/select&gt;
+        &lt;/div&gt;
+        &lt;button class=&#34;pm-arrow&#34; id=&#34;calNext&#34; aria-label=&#34;下一月&#34;&gt;▶&lt;/button&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&#34;pm-weekdays&#34; aria-hidden=&#34;true&#34;&gt;
+        &lt;div&gt;日&lt;/div&gt;&lt;div&gt;一&lt;/div&gt;&lt;div&gt;二&lt;/div&gt;&lt;div&gt;三&lt;/div&gt;&lt;div&gt;四&lt;/div&gt;&lt;div&gt;五&lt;/div&gt;&lt;div&gt;六&lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&#34;pm-days&#34; id=&#34;daysGrid&#34; role=&#34;grid&#34; aria-live=&#34;polite&#34;&gt;&lt;/div&gt;
+
+      &lt;div class=&#34;pm-legend&#34; aria-hidden=&#34;true&#34;&gt;
+        &lt;span&gt;less&lt;/span&gt;
+        &lt;div class=&#34;legend-squares&#34;&gt;
+          &lt;span class=&#34;sq sq-0&#34;&gt;&lt;/span&gt;
+          &lt;span class=&#34;sq sq-1&#34;&gt;&lt;/span&gt;
+          &lt;span class=&#34;sq sq-2&#34;&gt;&lt;/span&gt;
+          &lt;span class=&#34;sq sq-3&#34;&gt;&lt;/span&gt;
+          &lt;span class=&#34;sq sq-4&#34;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;span&gt;more&lt;/span&gt;
+      &lt;/div&gt;
+
+      &lt;div id=&#34;pmTooltip&#34; class=&#34;pm-tooltip&#34; role=&#34;tooltip&#34; aria-hidden=&#34;true&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;script&gt;
+        
+        var blogInfo = {
+    &#34;pages&#34;: [
+      
+      
+      
+      {
+        &#34;title&#34;: &#34;日记&#34;,
+        &#34;date&#34;: &#34;2025-03-30&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;03&#34;,
+        &#34;day&#34;: &#34;30&#34;,
+        &#34;word_count&#34;: &#34;563&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;第一次旅行&#34;,
+        &#34;date&#34;: &#34;2025-04-16&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;04&#34;,
+        &#34;day&#34;: &#34;16&#34;,
+        &#34;word_count&#34;: &#34;2134&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;学会提问——批判性思维指南&#34;,
+        &#34;date&#34;: &#34;2025-05-10&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;05&#34;,
+        &#34;day&#34;: &#34;10&#34;,
+        &#34;word_count&#34;: &#34;973&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;改变&#34;,
+        &#34;date&#34;: &#34;2025-05-20&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;05&#34;,
+        &#34;day&#34;: &#34;20&#34;,
+        &#34;word_count&#34;: &#34;670&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;大学心路&#34;,
+        &#34;date&#34;: &#34;2025-05-25&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;05&#34;,
+        &#34;day&#34;: &#34;25&#34;,
+        &#34;word_count&#34;: &#34;2268&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;目标与想象&#34;,
+        &#34;date&#34;: &#34;2025-06-07&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;06&#34;,
+        &#34;day&#34;: &#34;07&#34;,
+        &#34;word_count&#34;: &#34;1077&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;〈人类简史〉删减&#34;,
+        &#34;date&#34;: &#34;2025-06-29&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;06&#34;,
+        &#34;day&#34;: &#34;29&#34;,
+        &#34;word_count&#34;: &#34;521&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;这才是心理学&#34;,
+        &#34;date&#34;: &#34;2025-06-30&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;06&#34;,
+        &#34;day&#34;: &#34;30&#34;,
+        &#34;word_count&#34;: &#34;228&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;人类简史—从动物到上帝&#34;,
+        &#34;date&#34;: &#34;2025-06-30&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;06&#34;,
+        &#34;day&#34;: &#34;30&#34;,
+        &#34;word_count&#34;: &#34;247&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;经济学原理（第七版）&#34;,
+        &#34;date&#34;: &#34;2025-07-06&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;07&#34;,
+        &#34;day&#34;: &#34;06&#34;,
+        &#34;word_count&#34;: &#34;19&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;炎炎夏日&#34;,
+        &#34;date&#34;: &#34;2025-07-10&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;07&#34;,
+        &#34;day&#34;: &#34;10&#34;,
+        &#34;word_count&#34;: &#34;614&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;梦&#34;,
+        &#34;date&#34;: &#34;2025-07-27&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;07&#34;,
+        &#34;day&#34;: &#34;27&#34;,
+        &#34;word_count&#34;: &#34;432&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;1984&#34;,
+        &#34;date&#34;: &#34;2025-08-03&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;08&#34;,
+        &#34;day&#34;: &#34;03&#34;,
+        &#34;word_count&#34;: &#34;318&#34;
+      }
+      
+    ]
+  };
+
+        (function(){
+          const monthNames = [&#39;1月&#39;,&#39;2月&#39;,&#39;3月&#39;,&#39;4月&#39;,&#39;5月&#39;,&#39;6月&#39;,&#39;7月&#39;,&#39;8月&#39;,&#39;9月&#39;,&#39;10月&#39;,&#39;11月&#39;,&#39;12月&#39;];
+          const today = new Date();
+          let isTooltipVisible = false;
+          let currentTooltipCell = null;
+
+          
+          const dailyStats = {};
+          if (window.blogInfo &amp;&amp; Array.isArray(window.blogInfo.pages)) {
+            window.blogInfo.pages.forEach(p =&gt; {
+              if (!p.date) return;
+              if (!dailyStats[p.date]) dailyStats[p.date] = { count:0, words:0, posts:[] };
+              dailyStats[p.date].count += 1;
+              dailyStats[p.date].words += (Number(p.word_count) || 0);
+              dailyStats[p.date].posts.push({ title: p.title, words: Number(p.word_count) || 0 });
+            });
+          }
+
+          let curYear = today.getFullYear();
+          let curMonth = today.getMonth();
+
+          const yearSelect = document.getElementById(&#39;yearSelect&#39;);
+          const monthSelect = document.getElementById(&#39;monthSelect&#39;);
+          const daysGrid = document.getElementById(&#39;daysGrid&#39;);
+          const prevBtn = document.getElementById(&#39;calPrev&#39;);
+          const nextBtn = document.getElementById(&#39;calNext&#39;);
+          const tooltip = document.getElementById(&#39;pmTooltip&#39;);
+          const calendarRoot = document.getElementById(&#39;pmCalendar&#39;);
+
+          
+          function buildSelectors(year, month){
+            const start = today.getFullYear() - 5;
+            const end = today.getFullYear() + 5;
+            let yhtml = &#39;&#39;;
+            for (let y = start; y &lt;= end; y++){
+              yhtml += `&lt;option value=&#34;${y}&#34; ${y===year? &#39;selected&#39;:&#39;&#39;}&gt;${y}年&lt;/option&gt;`;
+            }
+            yearSelect.innerHTML = yhtml;
+            monthSelect.innerHTML = monthNames.map((m,i)=&gt;`&lt;option value=&#34;${i}&#34; ${i===month? &#39;selected&#39;:&#39;&#39;}&gt;${m}&lt;/option&gt;`).join(&#39;&#39;);
+          }
+
+          
+          function wordsToLevel(words){
+            const w = Number(words) || 0;
+            if (w === 0) return 0;
+            if (w &lt;= 100) return 1;
+            if (w &lt;= 500) return 2;
+            if (w &lt;= 1000) return 3;
+            return 4;
+          }
+
+          
+          function escapeHtml(str){
+            return String(str).replace(/[&amp;&lt;&gt;&#34;&#39;]/g, function(m){ 
+              return {&#39;&amp;&#39;:&#39;&amp;amp;&#39;,&#39;&lt;&#39;:&#39;&amp;lt;&#39;,&#39;&gt;&#39;:&#39;&amp;gt;&#39;,&#39;&#34;&#39;:&#39;&amp;quot;&#39;,&#34;&#39;&#34;:&#39;&amp;#39;&#39;}[m]; 
+            });
+          }
+
+          
+          function makeTooltipHtml(dateKey, entry){
+            if (!entry || entry.count === 0) {
+              return `&lt;div class=&#34;tp-date&#34;&gt;${dateKey}&lt;/div&gt;&lt;div&gt;无发布&lt;/div&gt;`;
+            }
+            let html = `&lt;div class=&#34;tp-date&#34;&gt;${dateKey}&lt;/div&gt;&lt;ul class=&#34;tp-posts&#34;&gt;`;
+            entry.posts.forEach(p =&gt; {
+              const safeTitle = escapeHtml(p.title);
+              html += `&lt;li&gt;&lt;span class=&#34;tp-post-title&#34;&gt;${safeTitle}&lt;/span&gt; &lt;span class=&#34;tp-post-meta&#34;&gt;(${p.words} 字)&lt;/span&gt;&lt;/li&gt;`;
+            });
+            html += `&lt;/ul&gt;&lt;div class=&#34;tp-meta&#34;&gt;共 ${entry.count} 篇 · ${entry.words} 字&lt;/div&gt;`;
+            return html;
+          }
+
+          
+          function showTooltipForCell(cell, dateKey, entry){
+            
+            if (isTooltipVisible &amp;&amp; currentTooltipCell === cell) return;
+            
+            
+            const wasVisible = isTooltipVisible;
+            hideTooltip();
+            
+            
+            const showDelay = wasVisible ? 50 : 0;
+            
+            setTimeout(() =&gt; {
+              currentTooltipCell = cell;
+              isTooltipVisible = true;
+
+              tooltip.innerHTML = makeTooltipHtml(dateKey, entry);
+              tooltip.style.display = &#39;block&#39;;
+              tooltip.classList.remove(&#39;visible&#39;);
+
+              
+              requestAnimationFrame(() =&gt; {
+                const rootRect = calendarRoot.getBoundingClientRect();
+                const cellRect = cell.getBoundingClientRect();
+                
+                
+                requestAnimationFrame(() =&gt; {
+                  const tooltipRect = tooltip.getBoundingClientRect();
+
+                  
+                  let centerX = (cellRect.left + cellRect.width/2) - rootRect.left;
+                  const halfTooltipWidth = tooltipRect.width / 2;
+                  
+                  
+                  centerX = Math.max(halfTooltipWidth + 8, centerX);
+                  centerX = Math.min(rootRect.width - halfTooltipWidth - 8, centerX);
+                  
+                  tooltip.style.left = `${centerX}px`;
+
+                  
+                  const spaceAbove = cellRect.top - rootRect.top;
+                  const spaceBelow = rootRect.bottom - cellRect.bottom;
+                  
+                  if (spaceAbove &gt; tooltipRect.height + 16 || spaceAbove &gt; spaceBelow) {
+                    
+                    const top = (cellRect.top - rootRect.top) - 12;
+                    tooltip.style.top = `${top}px`;
+                    tooltip.style.transform = &#39;translate(-50%, -100%)&#39;;
+                  } else {
+                    
+                    const top = (cellRect.bottom - rootRect.top) + 12;
+                    tooltip.style.top = `${top}px`;
+                    tooltip.style.transform = &#39;translate(-50%, 0%)&#39;;
+                  }
+
+                  
+                  tooltip.classList.add(&#39;visible&#39;);
+                  tooltip.setAttribute(&#39;aria-hidden&#39;,&#39;false&#39;);
+                });
+              });
+            }, showDelay);
+          }
+
+          
+          function hideTooltip(){
+            if (!isTooltipVisible) return;
+            
+            isTooltipVisible = false;
+            currentTooltipCell = null;
+            tooltip.classList.remove(&#39;visible&#39;);
+            tooltip.setAttribute(&#39;aria-hidden&#39;,&#39;true&#39;);
+
+            
+            setTimeout(() =&gt; {
+              if (!isTooltipVisible) {
+                tooltip.style.display = &#39;none&#39;;
+                tooltip.style.left = &#39;&#39;;
+                tooltip.style.top = &#39;&#39;;
+                tooltip.innerHTML = &#39;&#39;;
+              }
+            }, 150); 
+          }
+
+          
+          function render(year, month){
+            daysGrid.innerHTML = &#39;&#39;;
+            hideTooltip(); 
+            
+            const firstWeekday = new Date(year, month, 1).getDay();
+            const daysInMonth = new Date(year, month+1, 0).getDate();
+
+            
+            for (let i=0;i&lt;firstWeekday;i++){
+              const e = document.createElement(&#39;div&#39;);
+              e.className = &#39;pm-day pm-empty&#39;;
+              daysGrid.appendChild(e);
+            }
+
+            
+            for (let d=1; d&lt;=daysInMonth; d++){
+              const e = document.createElement(&#39;div&#39;);
+              e.className = &#39;pm-day&#39;;
+              e.setAttribute(&#39;role&#39;,&#39;button&#39;);
+              e.setAttribute(&#39;tabindex&#39;,&#39;0&#39;);
+              
+              const span = document.createElement(&#39;span&#39;);
+              span.textContent = d;
+              e.appendChild(span);
+
+              
+              if (year===today.getFullYear() &amp;&amp; month===today.getMonth() &amp;&amp; d===today.getDate()){
+                e.classList.add(&#39;today&#39;);
+              }
+
+              const dateKey = `${year}-${String(month+1).padStart(2,&#39;0&#39;)}-${String(d).padStart(2,&#39;0&#39;)}`;
+              const entry = dailyStats[dateKey] || {count:0, words:0, posts:[]};
+              const lvl = wordsToLevel(entry.words);
+
+              e.classList.add(`level-${lvl}`);
+
+              
+              
+
+              
+              e.addEventListener(&#39;mouseenter&#39;, (ev) =&gt; {
+                if (window.matchMedia(&#39;(pointer: fine)&#39;).matches) {
+                  showTooltipForCell(e, dateKey, entry);
+                }
+              });
+              
+              e.addEventListener(&#39;mouseleave&#39;, (ev) =&gt; {
+                if (window.matchMedia(&#39;(pointer: fine)&#39;).matches) {
+                  hideTooltip();
+                }
+              });
+
+              
+              let touchStartTime = 0;
+              
+              e.addEventListener(&#39;touchstart&#39;, (ev) =&gt; {
+                touchStartTime = Date.now();
+              }, { passive: true });
+              
+              e.addEventListener(&#39;touchend&#39;, (ev) =&gt; {
+                
+                const touchDuration = Date.now() - touchStartTime;
+                if (touchDuration &lt; 500) {
+                  ev.preventDefault();
+                  ev.stopPropagation();
+                  
+                  if (isTooltipVisible &amp;&amp; currentTooltipCell === e) {
+                    hideTooltip();
+                  } else {
+                    showTooltipForCell(e, dateKey, entry);
+                  }
+                }
+              });
+
+              
+              e.addEventListener(&#39;click&#39;, (ev) =&gt; {
+                
+                if (ev.detail === 0) return; 
+                
+                ev.stopPropagation();
+                if (isTooltipVisible &amp;&amp; currentTooltipCell === e) {
+                  hideTooltip();
+                } else {
+                  showTooltipForCell(e, dateKey, entry);
+                }
+              });
+
+              
+              e.addEventListener(&#39;keydown&#39;, (ev) =&gt; {
+                if (ev.key === &#39;Enter&#39; || ev.key === &#39; &#39;) {
+                  ev.preventDefault();
+                  if (isTooltipVisible &amp;&amp; currentTooltipCell === e) {
+                    hideTooltip(); 
+                  } else {
+                    showTooltipForCell(e, dateKey, entry);
+                  }
+                } else if (ev.key === &#39;Escape&#39;) {
+                  hideTooltip();
+                }
+              });
+              
+              e.addEventListener(&#39;blur&#39;, ()=&gt; {
+                
+                setTimeout(() =&gt; {
+                  if (!tooltip.matches(&#39;:hover&#39;) &amp;&amp; !e.matches(&#39;:focus&#39;)) {
+                    hideTooltip();
+                  }
+                }, 100);
+              });
+
+              daysGrid.appendChild(e);
+            }
+
+            
+            const totalCells = firstWeekday + daysInMonth;
+            const remainder = (7 - (totalCells % 7)) % 7;
+            for (let i=0;i&lt;remainder;i++){
+              const e = document.createElement(&#39;div&#39;);
+              e.className = &#39;pm-day pm-empty&#39;;
+              daysGrid.appendChild(e);
+            }
+          }
+
+          
+          document.addEventListener(&#39;click&#39;, (ev) =&gt; {
+            if (!tooltip.contains(ev.target) &amp;&amp; 
+                !ev.target.closest(&#39;.pm-day&#39;) &amp;&amp;
+                !ev.target.closest(&#39;.pm-tooltip&#39;)) {
+              hideTooltip();
+            }
+          });
+
+          
+          let resizeTimer;
+          window.addEventListener(&#39;resize&#39;, () =&gt; {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() =&gt; {
+              hideTooltip();
+            }, 100);
+          });
+
+          
+          window.addEventListener(&#39;scroll&#39;, () =&gt; {
+            hideTooltip();
+          }, { passive: true });
+
+          
+          prevBtn.addEventListener(&#39;click&#39;, ()=&gt; {
+            curMonth--;
+            if (curMonth &lt; 0){ curMonth = 11; curYear--; }
+            buildSelectors(curYear, curMonth);
+            render(curYear, curMonth);
+          });
+          
+          nextBtn.addEventListener(&#39;click&#39;, ()=&gt; {
+            curMonth++;
+            if (curMonth &gt; 11){ curMonth = 0; curYear++; }
+            buildSelectors(curYear, curMonth);
+            render(curYear, curMonth);
+          });
+
+          
+          yearSelect.addEventListener(&#39;change&#39;, (e)=&gt;{
+            curYear = Number(e.target.value);
+            buildSelectors(curYear, curMonth);
+            render(curYear, curMonth);
+          });
+          
+          monthSelect.addEventListener(&#39;change&#39;, (e)=&gt;{
+            curMonth = Number(e.target.value);
+            buildSelectors(curYear, curMonth);
+            render(curYear, curMonth);
+          });
+
+          
+          buildSelectors(curYear, curMonth);
+          render(curYear, curMonth);
+        })();
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</description>
+    </item>
+    <item>
       <title>My Bookshelf</title>
       <link>https://www.shuohan.work/zh/bookshelf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
