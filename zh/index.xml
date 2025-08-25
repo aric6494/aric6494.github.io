@@ -11,8 +11,20 @@
     </image>
     <generator>Hugo -- 0.147.2</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 14 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.shuohan.work/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>傲慢与偏见</title>
+      <link>https://www.shuohan.work/zh/books/2025/%E5%82%B2%E6%85%A2%E4%B8%8E%E5%81%8F%E8%A7%81/</link>
+      <pubDate>Mon, 25 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.shuohan.work/zh/books/2025/%E5%82%B2%E6%85%A2%E4%B8%8E%E5%81%8F%E8%A7%81/</guid>
+      <description>&lt;figure style=&#34;display:flex;&#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;images/book-cover.webp&#34; width=&#34;220&#34;/&gt; &lt;figcaption style=&#34;margin-left: 1em; float: right;&#34;&gt;
+            &lt;q&gt;傲慢与偏见&lt;/q&gt;&lt;p&gt;Author: 简·奥斯丁&lt;/p&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;本书根据作者自身经历进行一定虚构的故事。读完本书后，只知道它讲了女主人公放下偏见，以及男主人公放下傲慢，然后他们最后在一起的故事。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>简明哲学导论—大问题</title>
       <link>https://www.shuohan.work/zh/books/2025/%E7%AE%80%E6%98%8E%E5%93%B2%E5%AD%A6%E5%AF%BC%E8%AE%BA%E5%A4%A7%E9%97%AE%E9%A2%98/</link>
@@ -498,6 +510,15 @@ convert book-orig.jpg -resize 625x625^ -gravity Center book-cover.webp
         &#34;month&#34;: &#34;08&#34;,
         &#34;day&#34;: &#34;14&#34;,
         &#34;word_count&#34;: &#34;550&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;傲慢与偏见&#34;,
+        &#34;date&#34;: &#34;2025-08-25&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;08&#34;,
+        &#34;day&#34;: &#34;25&#34;,
+        &#34;word_count&#34;: &#34;414&#34;
       }
       
     ]
@@ -1237,6 +1258,15 @@ convert book-orig.jpg -resize 625x625^ -gravity Center book-cover.webp
         &#34;month&#34;: &#34;08&#34;,
         &#34;day&#34;: &#34;14&#34;,
         &#34;word_count&#34;: &#34;550&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;傲慢与偏见&#34;,
+        &#34;date&#34;: &#34;2025-08-25&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;08&#34;,
+        &#34;day&#34;: &#34;25&#34;,
+        &#34;word_count&#34;: &#34;414&#34;
       }
       
     ]
