@@ -11,8 +11,28 @@
     </image>
     <generator>Hugo -- 0.147.2</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 25 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.shuohan.work/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>语言本能</title>
+      <link>https://www.shuohan.work/zh/books/2025/%E8%AF%AD%E8%A8%80%E6%9C%AC%E8%83%BD/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.shuohan.work/zh/books/2025/%E8%AF%AD%E8%A8%80%E6%9C%AC%E8%83%BD/</guid>
+      <description>&lt;figure style=&#34;display:flex;&#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;images/book-cover.webp&#34; width=&#34;220&#34;/&gt; &lt;figcaption style=&#34;margin-left: 1em; float: right;&#34;&gt;
+            &lt;q&gt;语言本能&lt;/q&gt;&lt;p&gt;Author: 史蒂芬·平克&lt;/p&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;</description>
+    </item>
+    <item>
+      <title>中国近代史</title>
+      <link>https://www.shuohan.work/zh/books/2025/%E4%B8%AD%E5%9B%BD%E8%BF%91%E4%BB%A3%E5%8F%B2/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.shuohan.work/zh/books/2025/%E4%B8%AD%E5%9B%BD%E8%BF%91%E4%BB%A3%E5%8F%B2/</guid>
+      <description>&lt;figure style=&#34;display:flex;&#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;images/book-cover.webp&#34; width=&#34;220&#34;/&gt; &lt;figcaption style=&#34;margin-left: 1em; float: right;&#34;&gt;
+            &lt;q&gt;中国近代史&lt;/q&gt;&lt;p&gt;Author: 徐中约&lt;/p&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;</description>
+    </item>
     <item>
       <title>傲慢与偏见</title>
       <link>https://www.shuohan.work/zh/books/2025/%E5%82%B2%E6%85%A2%E4%B8%8E%E5%81%8F%E8%A7%81/</link>
@@ -173,8 +193,12 @@ convert book-orig.jpg -resize 625x625^ -gravity Center book-cover.webp
       <guid>https://www.shuohan.work/zh/about/</guid>
       <description>&lt;p&gt;想要学习感兴趣的一切的东西，记录生活，成长和经历。热爱听歌、散步、看电影，平常也会读书，偶尔“折腾”。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;音乐：喜欢节奏适当的音乐，不会过于热烈，也不会太过轻柔。&lt;/p&gt;</description>
+&lt;li&gt;音乐：偏爱节奏适当的英文音乐，不会过于热烈，也不会太过轻柔。&lt;/li&gt;
+&lt;li&gt;电影：目前最喜欢的电影系列是 Harry potter 七部曲。在决定看什么电影时，会出现选择困难症。&lt;/li&gt;
+&lt;li&gt;散步：希望多接触些真实的东西，而不是网络上的虚拟世界，遇到些自认为好看的风景，也会拍下来。&lt;/li&gt;
+&lt;li&gt;读书：通过阅读获得知识，喜欢大脑“充实”的感觉。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.shuohan.work/Notes/%E6%95%B0%E5%AD%97%E5%B7%A5%E5%85%B7/&#34;&gt;这篇文章&lt;/a&gt;列出我平常使用的工具或软件，希望对你有帮助。&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -519,6 +543,24 @@ convert book-orig.jpg -resize 625x625^ -gravity Center book-cover.webp
         &#34;month&#34;: &#34;08&#34;,
         &#34;day&#34;: &#34;25&#34;,
         &#34;word_count&#34;: &#34;414&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;中国近代史&#34;,
+        &#34;date&#34;: &#34;2025-09-03&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;09&#34;,
+        &#34;day&#34;: &#34;03&#34;,
+        &#34;word_count&#34;: &#34;15&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;语言本能&#34;,
+        &#34;date&#34;: &#34;2025-09-03&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;09&#34;,
+        &#34;day&#34;: &#34;03&#34;,
+        &#34;word_count&#34;: &#34;17&#34;
       }
       
     ]
@@ -1267,6 +1309,24 @@ convert book-orig.jpg -resize 625x625^ -gravity Center book-cover.webp
         &#34;month&#34;: &#34;08&#34;,
         &#34;day&#34;: &#34;25&#34;,
         &#34;word_count&#34;: &#34;414&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;中国近代史&#34;,
+        &#34;date&#34;: &#34;2025-09-03&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;09&#34;,
+        &#34;day&#34;: &#34;03&#34;,
+        &#34;word_count&#34;: &#34;15&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;语言本能&#34;,
+        &#34;date&#34;: &#34;2025-09-03&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;09&#34;,
+        &#34;day&#34;: &#34;03&#34;,
+        &#34;word_count&#34;: &#34;17&#34;
       }
       
     ]
