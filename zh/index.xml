@@ -11,8 +11,16 @@
     </image>
     <generator>Hugo -- 0.147.2</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 03 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Sep 2025 19:45:14 +0800</lastBuildDate>
     <atom:link href="https://www.shuohan.work/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>开学第一课</title>
+      <link>https://www.shuohan.work/zh/posts/%E5%BC%80%E5%AD%A6%E7%AC%AC%E4%B8%80%E8%AF%BE/</link>
+      <pubDate>Mon, 08 Sep 2025 19:45:14 +0800</pubDate>
+      <guid>https://www.shuohan.work/zh/posts/%E5%BC%80%E5%AD%A6%E7%AC%AC%E4%B8%80%E8%AF%BE/</guid>
+      <description>&lt;p&gt;第一周将每节课听了一遍后，我确定本学期需要认真对待的课程：语言学导论，西方文明史和法语。&lt;/p&gt;
+&lt;p&gt;之前的课程不是学习英语的语音、听力，就是了解如何向学生教学英语，实在乏味。而今也将体验新的课程。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>语言本能</title>
       <link>https://www.shuohan.work/zh/books/2025/%E8%AF%AD%E8%A8%80%E6%9C%AC%E8%83%BD/</link>
@@ -561,6 +569,15 @@ convert book-orig.jpg -resize 625x625^ -gravity Center book-cover.webp
         &#34;month&#34;: &#34;09&#34;,
         &#34;day&#34;: &#34;03&#34;,
         &#34;word_count&#34;: &#34;17&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;开学第一课&#34;,
+        &#34;date&#34;: &#34;2025-09-08&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;09&#34;,
+        &#34;day&#34;: &#34;08&#34;,
+        &#34;word_count&#34;: &#34;685&#34;
       }
       
     ]
@@ -1327,6 +1344,15 @@ convert book-orig.jpg -resize 625x625^ -gravity Center book-cover.webp
         &#34;month&#34;: &#34;09&#34;,
         &#34;day&#34;: &#34;03&#34;,
         &#34;word_count&#34;: &#34;17&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;开学第一课&#34;,
+        &#34;date&#34;: &#34;2025-09-08&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;09&#34;,
+        &#34;day&#34;: &#34;08&#34;,
+        &#34;word_count&#34;: &#34;685&#34;
       }
       
     ]
