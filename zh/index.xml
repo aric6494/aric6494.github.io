@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>赴言</title>
+    <title>笔迹</title>
     <link>https://www.shuohan.work/zh/</link>
-    <description>Recent content on 赴言</description>
+    <description>Recent content on 笔迹</description>
     <image>
-      <title>赴言</title>
+      <title>笔迹</title>
       <url>https://www.shuohan.work/images/papermod-cover.png</url>
       <link>https://www.shuohan.work/images/papermod-cover.png</link>
     </image>
@@ -202,7 +202,7 @@ convert book-orig.jpg -resize 625x625^ -gravity Center book-cover.webp
       <description>&lt;p&gt;想要学习感兴趣的一切的东西，记录生活，成长和经历。热爱听歌、散步、看电影，平常也会读书，偶尔“折腾”。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;音乐：偏爱节奏适当的英文音乐，不会过于热烈，也不会太过轻柔。&lt;/li&gt;
-&lt;li&gt;电影：目前最喜欢的电影系列是 Harry potter 七部曲。在决定看什么电影时，会出现选择困难症。&lt;/li&gt;
+&lt;li&gt;电影：目前最喜欢的电影系列是 Harry potter 七部曲、指环王和霍比特人系列。有电影选择困难症。&lt;/li&gt;
 &lt;li&gt;散步：希望多接触些真实的东西，而不是网络上的虚拟世界，遇到些自认为好看的风景，也会拍下来。&lt;/li&gt;
 &lt;li&gt;读书：通过阅读获得知识，喜欢大脑“充实”的感觉。&lt;/li&gt;
 &lt;/ul&gt;
