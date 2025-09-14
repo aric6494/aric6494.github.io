@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.147.2</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 08 Sep 2025 19:45:14 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 14 Sep 2025 10:51:08 +0800</lastBuildDate>
     <atom:link href="https://www.shuohan.work/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>勤工助学</title>
+      <link>https://www.shuohan.work/zh/posts/%E5%8B%A4%E5%B7%A5%E5%8A%A9%E5%AD%A6/</link>
+      <pubDate>Sun, 14 Sep 2025 10:51:08 +0800</pubDate>
+      <guid>https://www.shuohan.work/zh/posts/%E5%8B%A4%E5%B7%A5%E5%8A%A9%E5%AD%A6/</guid>
+      <description>&lt;p&gt;辅导员将我喊到办公室，询问我暑假在家中做了些什么，以及之后目标的是什么。老师又问我是否考虑勤工助学，平常帮老师做事，每月有 800元。我思考一会儿后，决定申请勤工助学。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>开学第一课</title>
       <link>https://www.shuohan.work/zh/posts/%E5%BC%80%E5%AD%A6%E7%AC%AC%E4%B8%80%E8%AF%BE/</link>
@@ -578,6 +585,15 @@ convert book-orig.jpg -resize 625x625^ -gravity Center book-cover.webp
         &#34;month&#34;: &#34;09&#34;,
         &#34;day&#34;: &#34;08&#34;,
         &#34;word_count&#34;: &#34;685&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;勤工助学&#34;,
+        &#34;date&#34;: &#34;2025-09-14&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;09&#34;,
+        &#34;day&#34;: &#34;14&#34;,
+        &#34;word_count&#34;: &#34;1023&#34;
       }
       
     ]
@@ -1353,6 +1369,15 @@ convert book-orig.jpg -resize 625x625^ -gravity Center book-cover.webp
         &#34;month&#34;: &#34;09&#34;,
         &#34;day&#34;: &#34;08&#34;,
         &#34;word_count&#34;: &#34;685&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;勤工助学&#34;,
+        &#34;date&#34;: &#34;2025-09-14&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;09&#34;,
+        &#34;day&#34;: &#34;14&#34;,
+        &#34;word_count&#34;: &#34;1023&#34;
       }
       
     ]
