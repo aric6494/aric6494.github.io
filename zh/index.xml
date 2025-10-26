@@ -11,8 +11,16 @@
     </image>
     <generator>Hugo -- 0.147.2</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 12 Oct 2025 22:48:29 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 26 Oct 2025 10:39:28 +0800</lastBuildDate>
     <atom:link href="https://www.shuohan.work/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>悸动</title>
+      <link>https://www.shuohan.work/zh/posts/%E6%82%B8%E5%8A%A8/</link>
+      <pubDate>Sun, 26 Oct 2025 10:39:28 +0800</pubDate>
+      <guid>https://www.shuohan.work/zh/posts/%E6%82%B8%E5%8A%A8/</guid>
+      <description>&lt;p&gt;近来一直有某种冲动，可我总是下意识的去抑制这样的思绪，这种冲动正是对恋爱的好奇、悸动。&lt;/p&gt;
+&lt;p&gt;说起来，我也曾暗恋过女生。那时会不自觉的看向她、好奇她在做什么，从周围的同学若寻不到她的身影，心里会有所失落。直到她出现在我的视线中时，心情便又放松了下来。若我真的喜欢一位女孩，我理应存在这些行为和感受。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>逃避</title>
       <link>https://www.shuohan.work/zh/posts/%E9%80%83%E9%81%BF/</link>
@@ -643,6 +651,15 @@ convert book-orig.jpg -resize 625x625^ -gravity Center book-cover.webp
         &#34;month&#34;: &#34;10&#34;,
         &#34;day&#34;: &#34;12&#34;,
         &#34;word_count&#34;: &#34;291&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;悸动&#34;,
+        &#34;date&#34;: &#34;2025-10-26&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;10&#34;,
+        &#34;day&#34;: &#34;26&#34;,
+        &#34;word_count&#34;: &#34;788&#34;
       }
       
     ]
@@ -1454,6 +1471,15 @@ convert book-orig.jpg -resize 625x625^ -gravity Center book-cover.webp
         &#34;month&#34;: &#34;10&#34;,
         &#34;day&#34;: &#34;12&#34;,
         &#34;word_count&#34;: &#34;291&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;悸动&#34;,
+        &#34;date&#34;: &#34;2025-10-26&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;10&#34;,
+        &#34;day&#34;: &#34;26&#34;,
+        &#34;word_count&#34;: &#34;788&#34;
       }
       
     ]
