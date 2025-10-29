@@ -236,12 +236,21 @@ convert book-orig.jpg -resize 625x625^ -gravity Center book-cover.webp
       <link>https://www.shuohan.work/zh/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.shuohan.work/zh/about/</guid>
-      <description>&lt;p&gt;想要学习感兴趣的一切的东西，记录生活，成长和经历。热爱听歌、散步、看电影，平常也会读书，偶尔“折腾”。&lt;/p&gt;
+      <description>&lt;h3 id=&#34;我&#34;&gt;我&lt;/h3&gt;
+&lt;p&gt;想要学习感兴趣的一切的东西，记录生活，成长和经历。热爱听歌、散步、看电影，平常也会读书，偶尔“折腾”。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;音乐：偏爱节奏适当的英文音乐，不会过于热烈，也不会太过轻柔。&lt;/li&gt;
 &lt;li&gt;电影：目前最喜欢的电影系列是 Harry potter 七部曲、指环王和霍比特人系列；英剧喜欢《万物生灵》，有电影选择困难症。&lt;/li&gt;
 &lt;li&gt;散步：希望多接触些真实的东西，而不是网络上的虚拟世界，遇到些自认为好看的风景，也会拍下来。&lt;/li&gt;
 &lt;li&gt;读书：通过阅读获得知识，喜欢大脑“充实”的感觉。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;常看博客&#34;&gt;常看博客&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://guozheng.rbind.io/&#34;&gt;黄国政&lt;/a&gt;一名人类学研究生，记录日常以及人类学知识；&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.wenxuecity.com/myoverview/80634/&#34;&gt;硅谷居士&lt;/a&gt;分享投资相关内容；&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.qncd.com/&#34;&gt;尺宅杂记&lt;/a&gt;热爱阅读的一位老师；&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stephenleng.com/cn/&#34;&gt;心的道理&lt;/a&gt;对社会现象有个人的见解；&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wangyurui.com/&#34;&gt;太隐&lt;/a&gt;不只介绍历史人物。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.shuohan.work/Notes/%E6%95%B0%E5%AD%97%E5%B7%A5%E5%85%B7/&#34;&gt;这篇文章&lt;/a&gt;列出我平常使用的工具或软件，希望对你有帮助。&lt;/p&gt;</description>
     </item>
