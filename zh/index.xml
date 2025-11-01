@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>笔记</title>
-    <link>https://www.shuohan.work/zh/</link>
+    <link>https://aric6494.github.io/zh/</link>
     <description>Recent content on 笔记</description>
     <image>
       <title>笔记</title>
-      <url>https://www.shuohan.work/images/papermod-cover.png</url>
-      <link>https://www.shuohan.work/images/papermod-cover.png</link>
+      <url>https://aric6494.github.io/images/papermod-cover.png</url>
+      <link>https://aric6494.github.io/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.147.2</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sat, 01 Nov 2025 10:51:14 +0800</lastBuildDate>
-    <atom:link href="https://www.shuohan.work/zh/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aric6494.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>数字工具</title>
-      <link>https://www.shuohan.work/zh/posts/%E6%95%B0%E5%AD%97%E5%B7%A5%E5%85%B7/</link>
+      <link>https://aric6494.github.io/zh/posts/%E6%95%B0%E5%AD%97%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Sat, 01 Nov 2025 10:51:14 +0800</pubDate>
-      <guid>https://www.shuohan.work/zh/posts/%E6%95%B0%E5%AD%97%E5%B7%A5%E5%85%B7/</guid>
+      <guid>https://aric6494.github.io/zh/posts/%E6%95%B0%E5%AD%97%E5%B7%A5%E5%85%B7/</guid>
       <description>&lt;p&gt;本篇文章记录本人经常使用的软件和工具等。&lt;/p&gt;
 &lt;h3 id=&#34;笔记软件&#34;&gt;笔记软件&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://obsidian.md/&#34;&gt;obsidian&lt;/a&gt;是一个多平台的笔记软件。支持&lt;strong&gt;markdown语法&lt;/strong&gt;和&lt;strong&gt;双链&lt;/strong&gt;，同时也支持安装插件。&lt;/p&gt;
@@ -28,9 +28,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://www.shuohan.work/zh/about/</link>
+      <link>https://aric6494.github.io/zh/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.shuohan.work/zh/about/</guid>
+      <guid>https://aric6494.github.io/zh/about/</guid>
       <description>&lt;p&gt;本站用以记录自以为是笔记的东西。&lt;/p&gt;
 &lt;h3 id=&#34;我&#34;&gt;我&lt;/h3&gt;
 &lt;p&gt;想要学习感兴趣的一切的东西，记录生活，成长和经历。热爱听歌、散步、看电影，平常也会读书，偶尔“折腾”。&lt;/p&gt;
@@ -51,9 +51,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://www.shuohan.work/zh/statics/</link>
+      <link>https://aric6494.github.io/zh/statics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.shuohan.work/zh/statics/</guid>
+      <guid>https://aric6494.github.io/zh/statics/</guid>
       <description>&lt;p&gt;一个统计页面。&lt;/p&gt;
 &lt;h3 id=&#34;热力图&#34;&gt;热力图&lt;/h3&gt;
 &lt;!DOCTYPE html&gt;
@@ -1233,9 +1233,9 @@
     </item>
     <item>
       <title>My Bookshelf</title>
-      <link>https://www.shuohan.work/zh/bookshelf/</link>
+      <link>https://aric6494.github.io/zh/bookshelf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.shuohan.work/zh/bookshelf/</guid>
+      <guid>https://aric6494.github.io/zh/bookshelf/</guid>
       <description></description>
     </item>
   </channel>
