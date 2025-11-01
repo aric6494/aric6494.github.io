@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>笔迹</title>
+<title>笔记</title>
 <meta name="keywords" content="">
 <meta name="description" content="一个统计页面。
 热力图
@@ -146,7 +146,11 @@
 </noscript>
    
 
-   
+<script
+    src="https://app.rybbit.io/api/script.js"
+    data-site-id="924"
+    defer
+></script>
 
 <script>
 window.MathJax = {
@@ -164,8 +168,8 @@ window.MathJax = {
 </script>
 
 <meta property="og:url" content="https://www.shuohan.work/zh/statics/">
-  <meta property="og:site_name" content="笔迹">
-  <meta property="og:title" content="笔迹">
+  <meta property="og:site_name" content="笔记">
+  <meta property="og:title" content="笔记">
   <meta property="og:description" content="一个统计页面。
 热力图 &lt;!DOCTYPE html&gt;博客文章热力图M W F Slessmore日历 &lt;!DOCTYPE html&gt;修复后的发布日历◀▶日一二三四五六lessmore">
   <meta property="og:locale" content="zh-CN">
@@ -300,7 +304,7 @@ window.MathJax = {
   },
   "publisher": {
     "@type": "Organization",
-    "name": "笔迹",
+    "name": "笔记",
     "logo": {
       "@type": "ImageObject",
       "url": "https://www.shuohan.work/favicon.ico"
@@ -325,7 +329,7 @@ window.MathJax = {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://www.shuohan.work/zh/" accesskey="h" title="笔迹 (Alt + H)">笔迹</a>
+            <a href="https://www.shuohan.work/zh/" accesskey="h" title="笔记 (Alt + H)">笔记</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -371,84 +375,22 @@ window.MathJax = {
     <h1 class="post-title entry-hint-parent">
       
     </h1>
-  </header> <aside id="toc-container" class="toc-container wide">
-    <div class="toc">
-        <details  open>
-            <summary accesskey="c" title="(Alt + C)">
-                <span class="details">目录</span>
-            </summary>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
 
-            <div class="inner"><ul>
-                    <li>
-                        <a href="#%e7%83%ad%e5%8a%9b%e5%9b%be" aria-label="热力图">热力图</a></li>
-                    <li>
-                        <a href="#%e6%97%a5%e5%8e%86" aria-label="日历">日历</a>
-                    </li>
-                </ul>
-            </div>
-        </details>
-    </div>
-</aside>
-<script>
-    let activeElement;
-    let elements;
-    window.addEventListener('DOMContentLoaded', function (event) {
-        checkTocPosition();
-
-        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
-         
-         activeElement = elements[0];
-         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
-         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
-     }, false);
-
-    window.addEventListener('resize', function(event) {
-        checkTocPosition();
-    }, false);
-
-    window.addEventListener('scroll', () => {
-        
-        activeElement = Array.from(elements).find((element) => {
-            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
-                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
-                return element;
-            }
-        }) || activeElement
-
-        elements.forEach(element => {
-             const id = encodeURI(element.getAttribute('id')).toLowerCase();
-             if (element === activeElement){
-                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
-             } else {
-                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
-             }
-         })
-     }, false);
-
-    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
-    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
-    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
-
-    function checkTocPosition() {
-        const width = document.body.scrollWidth;
-
-        if (width - main - (toc * 2) - (gap * 4) > 0) {
-            document.getElementById("toc-container").classList.add("wide");
-        } else {
-            document.getElementById("toc-container").classList.remove("wide");
-        }
-    }
-
-    function getOffsetTop(element) {
-        if (!element.getClientRects().length) {
-            return 0;
-        }
-        let rect = element.getBoundingClientRect();
-        let win = element.ownerDocument.defaultView;
-        return rect.top + win.pageYOffset;   
-    }
-</script>
-
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e7%83%ad%e5%8a%9b%e5%9b%be" aria-label="热力图">热力图</a></li>
+                <li>
+                    <a href="#%e6%97%a5%e5%8e%86" aria-label="日历">日历</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
   <div class="post-content"><p>一个统计页面。</p>
 <h3 id="热力图">热力图<a hidden class="anchor" aria-hidden="true" href="#热力图">#</a></h3>
 <!DOCTYPE html>
@@ -655,210 +597,12 @@ window.MathJax = {
       
       
       {
-        "title": "日记",
-        "date": "2025-03-30",
+        "title": "数字工具",
+        "date": "2025-11-01",
         "year": "2025",
-        "month": "03",
-        "day": "30",
-        "word_count": "563"
-      },
-      
-      {
-        "title": "第一次旅行",
-        "date": "2025-04-16",
-        "year": "2025",
-        "month": "04",
-        "day": "16",
-        "word_count": "2134"
-      },
-      
-      {
-        "title": "学会提问——批判性思维指南",
-        "date": "2025-05-10",
-        "year": "2025",
-        "month": "05",
-        "day": "10",
-        "word_count": "973"
-      },
-      
-      {
-        "title": "改变",
-        "date": "2025-05-20",
-        "year": "2025",
-        "month": "05",
-        "day": "20",
-        "word_count": "670"
-      },
-      
-      {
-        "title": "大学心路",
-        "date": "2025-05-25",
-        "year": "2025",
-        "month": "05",
-        "day": "25",
-        "word_count": "2268"
-      },
-      
-      {
-        "title": "目标与想象",
-        "date": "2025-06-07",
-        "year": "2025",
-        "month": "06",
-        "day": "07",
-        "word_count": "1077"
-      },
-      
-      {
-        "title": "〈人类简史〉删减",
-        "date": "2025-06-29",
-        "year": "2025",
-        "month": "06",
-        "day": "29",
-        "word_count": "521"
-      },
-      
-      {
-        "title": "这才是心理学",
-        "date": "2025-06-30",
-        "year": "2025",
-        "month": "06",
-        "day": "30",
-        "word_count": "228"
-      },
-      
-      {
-        "title": "人类简史—从动物到上帝",
-        "date": "2025-06-30",
-        "year": "2025",
-        "month": "06",
-        "day": "30",
-        "word_count": "247"
-      },
-      
-      {
-        "title": "经济学原理（第七版）",
-        "date": "2025-07-06",
-        "year": "2025",
-        "month": "07",
-        "day": "06",
-        "word_count": "19"
-      },
-      
-      {
-        "title": "炎炎夏日",
-        "date": "2025-07-10",
-        "year": "2025",
-        "month": "07",
-        "day": "10",
-        "word_count": "614"
-      },
-      
-      {
-        "title": "梦",
-        "date": "2025-07-27",
-        "year": "2025",
-        "month": "07",
-        "day": "27",
-        "word_count": "432"
-      },
-      
-      {
-        "title": "1984",
-        "date": "2025-08-03",
-        "year": "2025",
-        "month": "08",
-        "day": "03",
-        "word_count": "318"
-      },
-      
-      {
-        "title": "简明哲学导论—大问题",
-        "date": "2025-08-14",
-        "year": "2025",
-        "month": "08",
-        "day": "14",
-        "word_count": "550"
-      },
-      
-      {
-        "title": "傲慢与偏见",
-        "date": "2025-08-25",
-        "year": "2025",
-        "month": "08",
-        "day": "25",
-        "word_count": "414"
-      },
-      
-      {
-        "title": "中国近代史",
-        "date": "2025-09-03",
-        "year": "2025",
-        "month": "09",
-        "day": "03",
-        "word_count": "15"
-      },
-      
-      {
-        "title": "语言本能",
-        "date": "2025-09-03",
-        "year": "2025",
-        "month": "09",
-        "day": "03",
-        "word_count": "17"
-      },
-      
-      {
-        "title": "开学第一课",
-        "date": "2025-09-08",
-        "year": "2025",
-        "month": "09",
-        "day": "08",
-        "word_count": "685"
-      },
-      
-      {
-        "title": "勤工助学",
-        "date": "2025-09-14",
-        "year": "2025",
-        "month": "09",
-        "day": "14",
-        "word_count": "1023"
-      },
-      
-      {
-        "title": "压力",
-        "date": "2025-09-21",
-        "year": "2025",
-        "month": "09",
-        "day": "21",
-        "word_count": "534"
-      },
-      
-      {
-        "title": "投资",
-        "date": "2025-09-27",
-        "year": "2025",
-        "month": "09",
-        "day": "27",
-        "word_count": "744"
-      },
-      
-      {
-        "title": "逃避",
-        "date": "2025-10-12",
-        "year": "2025",
-        "month": "10",
-        "day": "12",
-        "word_count": "291"
-      },
-      
-      {
-        "title": "悸动",
-        "date": "2025-10-26",
-        "year": "2025",
-        "month": "10",
-        "day": "26",
-        "word_count": "788"
+        "month": "11",
+        "day": "01",
+        "word_count": "1436"
       }
       
     ]
@@ -1475,210 +1219,12 @@ window.MathJax = {
       
       
       {
-        "title": "日记",
-        "date": "2025-03-30",
+        "title": "数字工具",
+        "date": "2025-11-01",
         "year": "2025",
-        "month": "03",
-        "day": "30",
-        "word_count": "563"
-      },
-      
-      {
-        "title": "第一次旅行",
-        "date": "2025-04-16",
-        "year": "2025",
-        "month": "04",
-        "day": "16",
-        "word_count": "2134"
-      },
-      
-      {
-        "title": "学会提问——批判性思维指南",
-        "date": "2025-05-10",
-        "year": "2025",
-        "month": "05",
-        "day": "10",
-        "word_count": "973"
-      },
-      
-      {
-        "title": "改变",
-        "date": "2025-05-20",
-        "year": "2025",
-        "month": "05",
-        "day": "20",
-        "word_count": "670"
-      },
-      
-      {
-        "title": "大学心路",
-        "date": "2025-05-25",
-        "year": "2025",
-        "month": "05",
-        "day": "25",
-        "word_count": "2268"
-      },
-      
-      {
-        "title": "目标与想象",
-        "date": "2025-06-07",
-        "year": "2025",
-        "month": "06",
-        "day": "07",
-        "word_count": "1077"
-      },
-      
-      {
-        "title": "〈人类简史〉删减",
-        "date": "2025-06-29",
-        "year": "2025",
-        "month": "06",
-        "day": "29",
-        "word_count": "521"
-      },
-      
-      {
-        "title": "这才是心理学",
-        "date": "2025-06-30",
-        "year": "2025",
-        "month": "06",
-        "day": "30",
-        "word_count": "228"
-      },
-      
-      {
-        "title": "人类简史—从动物到上帝",
-        "date": "2025-06-30",
-        "year": "2025",
-        "month": "06",
-        "day": "30",
-        "word_count": "247"
-      },
-      
-      {
-        "title": "经济学原理（第七版）",
-        "date": "2025-07-06",
-        "year": "2025",
-        "month": "07",
-        "day": "06",
-        "word_count": "19"
-      },
-      
-      {
-        "title": "炎炎夏日",
-        "date": "2025-07-10",
-        "year": "2025",
-        "month": "07",
-        "day": "10",
-        "word_count": "614"
-      },
-      
-      {
-        "title": "梦",
-        "date": "2025-07-27",
-        "year": "2025",
-        "month": "07",
-        "day": "27",
-        "word_count": "432"
-      },
-      
-      {
-        "title": "1984",
-        "date": "2025-08-03",
-        "year": "2025",
-        "month": "08",
-        "day": "03",
-        "word_count": "318"
-      },
-      
-      {
-        "title": "简明哲学导论—大问题",
-        "date": "2025-08-14",
-        "year": "2025",
-        "month": "08",
-        "day": "14",
-        "word_count": "550"
-      },
-      
-      {
-        "title": "傲慢与偏见",
-        "date": "2025-08-25",
-        "year": "2025",
-        "month": "08",
-        "day": "25",
-        "word_count": "414"
-      },
-      
-      {
-        "title": "中国近代史",
-        "date": "2025-09-03",
-        "year": "2025",
-        "month": "09",
-        "day": "03",
-        "word_count": "15"
-      },
-      
-      {
-        "title": "语言本能",
-        "date": "2025-09-03",
-        "year": "2025",
-        "month": "09",
-        "day": "03",
-        "word_count": "17"
-      },
-      
-      {
-        "title": "开学第一课",
-        "date": "2025-09-08",
-        "year": "2025",
-        "month": "09",
-        "day": "08",
-        "word_count": "685"
-      },
-      
-      {
-        "title": "勤工助学",
-        "date": "2025-09-14",
-        "year": "2025",
-        "month": "09",
-        "day": "14",
-        "word_count": "1023"
-      },
-      
-      {
-        "title": "压力",
-        "date": "2025-09-21",
-        "year": "2025",
-        "month": "09",
-        "day": "21",
-        "word_count": "534"
-      },
-      
-      {
-        "title": "投资",
-        "date": "2025-09-27",
-        "year": "2025",
-        "month": "09",
-        "day": "27",
-        "word_count": "744"
-      },
-      
-      {
-        "title": "逃避",
-        "date": "2025-10-12",
-        "year": "2025",
-        "month": "10",
-        "day": "12",
-        "word_count": "291"
-      },
-      
-      {
-        "title": "悸动",
-        "date": "2025-10-26",
-        "year": "2025",
-        "month": "10",
-        "day": "26",
-        "word_count": "788"
+        "month": "11",
+        "day": "01",
+        "word_count": "1436"
       }
       
     ]
@@ -2032,6 +1578,24 @@ window.MathJax = {
     </ul>
 
   </footer>
+
+
+<div>
+    <div class="pagination__title">
+        <span class="pagination__title-h" style="font-size: 20px;">💬评论</span>
+        <hr />
+    </div>
+    <div id="tcomment"></div>
+    <script src="https://cdn.staticfile.org/twikoo/1.6.42/twikoo.all.min.js"></script>
+    <script> twikoo.init({
+            envId: "https://twikoo.shuohan.work/",  
+            el: "#tcomment",
+            lang: 'zh-CN',
+            region: '',  
+            path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
+        }); </script>
+</div>
+
 </article>
 
 
@@ -2047,32 +1611,6 @@ window.MathJax = {
 </p>
     </main>
     
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
 
   
 
@@ -2098,7 +1636,7 @@ window.MathJax = {
 
 
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://www.shuohan.work/zh/">笔迹</a></span> · 
+        <span>&copy; 2025 <a href="https://www.shuohan.work/zh/">笔记</a></span> · 
 
     <span>
         Powered by
