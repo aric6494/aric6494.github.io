@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.147.2</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 01 Nov 2025 10:51:14 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 02 Nov 2025 16:23:51 +0800</lastBuildDate>
     <atom:link href="https://aric6494.github.io/zh/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>卡片盒笔记法</title>
+      <link>https://aric6494.github.io/zh/posts/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/</link>
+      <pubDate>Sun, 02 Nov 2025 16:23:51 +0800</pubDate>
+      <guid>https://aric6494.github.io/zh/posts/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/</guid>
+      <description>&lt;p&gt;卡片盒笔记法是一个可关联不同笔记的方法，这样说也许有些简单，不过下文我会提到如何实施它。使用这个方法有一个前提：笔记软件最好支持 &lt;strong&gt;双链&lt;/strong&gt;，还有标签（如 obsidian）。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>数字工具</title>
       <link>https://aric6494.github.io/zh/posts/%E6%95%B0%E5%AD%97%E5%B7%A5%E5%85%B7/</link>
