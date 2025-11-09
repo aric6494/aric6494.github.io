@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.147.2</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 02 Nov 2025 16:23:51 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 09 Nov 2025 10:59:53 +0800</lastBuildDate>
     <atom:link href="https://aric6494.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>乐观</title>
+      <link>https://aric6494.github.io/zh/posts/%E4%B9%90%E8%A7%82/</link>
+      <pubDate>Sun, 09 Nov 2025 10:59:53 +0800</pubDate>
+      <guid>https://aric6494.github.io/zh/posts/%E4%B9%90%E8%A7%82/</guid>
+      <description>&lt;p&gt;一位乐观的人，并不是每天哈哈大笑。笑是一个情绪——快乐、高兴的感受，因此不可以人在高兴时，就说他/她是乐观开朗的人。乐观的人有两个最重要的特征：&lt;/p&gt;</description>
+    </item>
     <item>
       <title>卡片盒笔记法</title>
       <link>https://aric6494.github.io/zh/posts/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/</link>
@@ -282,6 +289,15 @@
         &#34;month&#34;: &#34;11&#34;,
         &#34;day&#34;: &#34;02&#34;,
         &#34;word_count&#34;: &#34;646&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;乐观&#34;,
+        &#34;date&#34;: &#34;2025-11-09&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;11&#34;,
+        &#34;day&#34;: &#34;09&#34;,
+        &#34;word_count&#34;: &#34;1141&#34;
       }
       
     ]
@@ -913,6 +929,15 @@
         &#34;month&#34;: &#34;11&#34;,
         &#34;day&#34;: &#34;02&#34;,
         &#34;word_count&#34;: &#34;646&#34;
+      },
+      
+      {
+        &#34;title&#34;: &#34;乐观&#34;,
+        &#34;date&#34;: &#34;2025-11-09&#34;,
+        &#34;year&#34;: &#34;2025&#34;,
+        &#34;month&#34;: &#34;11&#34;,
+        &#34;day&#34;: &#34;09&#34;,
+        &#34;word_count&#34;: &#34;1141&#34;
       }
       
     ]
